@@ -4,8 +4,9 @@ import "fullpage.js/vendors/scrolloverflow"; // Optional. When using scrollOverf
 import ReactFullpage from "@fullpage/react-fullpage";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles-home.css";
-import Navbar from "../Components/Navbar/Navbar";
+import Navbar from "../Components/Navbar";
 import HomeComp from "../Components/HomeComp/HomeComp";
+import { BrowserRouter as Router, Route, Switch}  from 'react-router-dom';
 
 class FullpageWrapper extends React.Component {
   onLeave(origin, destination, direction) {
@@ -17,7 +18,16 @@ class FullpageWrapper extends React.Component {
   render() {
     return (
       <>
-        <Navbar />
+        {/* <Navbar /> */}
+        <Router>
+            <Switch>
+                {/* <Navbar /> */}
+                {/* <Route path="/" component={Navbar} exact/> */}
+                <Route path="/" component={Navbar} exact/>
+                {/* <Route path="/aboutus" component={SigninPage} exact/> */}
+            </Switch>
+        </Router>
+        
         <ReactFullpage
           navigation={true}
           navigationColor={["white"]}

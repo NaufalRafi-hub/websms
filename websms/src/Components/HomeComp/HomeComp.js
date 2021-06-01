@@ -1,19 +1,26 @@
 import React from 'react'
 import {Row, Col} from "react-bootstrap"
-import aset1 from "../../images/aset1.png"
-import "./HomeComp.css";
+import img from "../../images/aboutus.png"
+import "./HomeComp.css"
 
 const HomeComp = () => {
     return (
-        <div className="container">
-            <Row className="justify-content-md-center">
-                <Col>
-                    <img src={aset1} alt="aset1" width="900"/>
-                </Col>
-                <Col className="sub">   
-                    <h1>SMS</h1>
-                </Col>  
-            </Row>
+        <div className="container-fluid">
+            <div className="container" >
+                <Row className="justify-content-md-center">
+                    
+                    <Col className="sub" md={{ span: 6, offset: 5 }}>   
+                        <h1>SMS</h1>
+                        <h2>"Jasa Cetak dalam Satu Atap"</h2>
+                    </Col>  
+                </Row>
+                {/* <Row className="justify-content-md-center">
+                    
+                    <Col className="sub2" md={{ span: 5, offset: 6 }}>   
+                        <h1>"Jasa Cetak dalam Satu Atap"</h1>
+                    </Col>  
+                </Row> */}
+            </div>
         </div>
     )
 }

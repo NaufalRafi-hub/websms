@@ -1,10 +1,23 @@
-body {
-    background-image: url()
-}
+/* .container-fluid {
+    background-image: url(../../images/aset1.png);
+    background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+    
+} */
 
 .sub h1{
     font-weight: bold;
     text-align: center;
     justify-content: center;
-    font-size: 50px;
+    font-size: 220px;
+    color:#FFCC33;
+}
+
+.sub h2{
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
 }
