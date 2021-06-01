@@ -2,8 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "fullpage.js/vendors/scrolloverflow"; // Optional. When using scrollOverflow:true
 import ReactFullpage from "@fullpage/react-fullpage";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./styles.css";
+import Navbar from "./Components/Navbar";
+
 
 class FullpageWrapper extends React.Component {
   onLeave(origin, destination, direction) {
@@ -15,34 +17,37 @@ class FullpageWrapper extends React.Component {
   render() {
     return (
       <ReactFullpage
+        navigation={true}
+        navigationColor ={['white']}
         scrollOverflow={true}
-        sectionsColor={["white"]}
+        sectionsColor={["orange","orange",]}
         onLeave={this.onLeave.bind(this)}
         afterLoad={this.afterLoad.bind(this)}
         render={({ state, fullpageApi }) => {
           return (
-            <div id="fullpage-wrapper">
-              <div className="section section1">
-                <h3>Section 1</h3>
-              </div>
-              <div className="section">
-                <div className="slide">
-                  <h3>Slide 2.1</h3>
+              // <Navbar />
+              <div id="fullpage-wrapper">
+                <Navbar />
+                <div className="section section1">
+                
+                  <h3>Home</h3>
                 </div>
-                <div className="slide">
-                  <h3>Slide 2.2</h3>
+                <div className="section">
+                  <h3>About Us</h3>
                 </div>
-                <div className="slide">
-                  <h3>Slide 2.3</h3>
+                <div className="section">
+                  <h3>Services</h3>
+                </div>
+                <div className="section">
+                  <h3>Our Work</h3>
+                </div>
+                <div className="section">
+                  <h3>Track Order</h3>
+                </div>
+                <div className="section">
+                  <h3>Contact Us</h3>
                 </div>
               </div>
-              <div className="section">
-                <h3>Section 3</h3>
-                <button onClick={() => fullpageApi.moveTo(1, 0)}>
-                  Move top
-                </button>
-              </div>
-            </div>
           );
         }}
       />
@@ -50,7 +55,12 @@ class FullpageWrapper extends React.Component {
   }
 }
 
-ReactDOM.render(<FullpageWrapper />, document.getElementById("react-root"));
+ReactDOM.render(
+    
+    <FullpageWrapper />, 
+    
+    document.getElementById("react-root")
+    );
 
 export default FullpageWrapper;
 
