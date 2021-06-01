@@ -3,7 +3,6 @@ import styled from 'styled-components'
 
 export const Nav = styled.nav`
     background: transparent;
-    opacity: 0.6;
     justify-content: center;
     font-weight: bold;
     font-color: #0000;
