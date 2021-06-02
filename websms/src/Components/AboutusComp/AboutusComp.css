@@ -20,13 +20,20 @@
 }
 
 .btn-about {
-    margin-left: 422px;
+    margin-right: 285px;
     background:#24275C;
-    padding: 8px 30px;
+    padding: 8px 23px;
     font-size: 12px;
     border-radius: 20px;
     cursor: pointer;
+    display: inline-block;
 }
 .btn-about:hover {
     background:#3a3e91;
+}
+
+.line-about{
+    padding-top: 10px;
+    margin-left: 285px;
+    display: inline-block;
 }

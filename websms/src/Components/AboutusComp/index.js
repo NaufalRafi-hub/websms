@@ -14,7 +14,14 @@ const AboutusComp = () => {
                     <div className="isi">
                         <p>Kami adalah Perusahaan yang terletak di bintaro, Indonesia. CV. Sinar Media Sakti sebuah perusahaan yang dari sejak awal berkomitmen untuk bergerak dalam bidang pelayanan barang dan jasa dengan spesialisasi di bidang cetak. </p>               
                     </div>
-                    <img src={line} alt="garis" /> 
+                    
+                </Col>
+            </Row>
+            <Row>
+                <Col className="sub-about" >
+                    <img src={line} alt="garis" className="line-about"/> 
+                </Col>
+                <Col className="sub-about" >
                     <Button className="btn-about" variant="dark">See Detail</Button>
                 </Col>
             </Row>
