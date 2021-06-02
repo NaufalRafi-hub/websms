@@ -8,6 +8,7 @@ import Navbar from "../Components/Navbar";
 import HomeComp from "../Components/HomeComp/HomeComp";
 import { BrowserRouter as Router, Route, Switch}  from 'react-router-dom';
 import AboutusComp from "../Components/AboutusComp";
+import ServicesComp from "../Components/ServicesComp";
 
 class FullpageWrapper extends React.Component {
   onLeave(origin, destination, direction) {
@@ -48,7 +49,7 @@ class FullpageWrapper extends React.Component {
                     <AboutusComp />
                   </div>
                   <div className="section">
-                    <h3>Services</h3>
+                    <ServicesComp />
                   </div>
                   <div className="section">
                     <h3>Our Work</h3>
