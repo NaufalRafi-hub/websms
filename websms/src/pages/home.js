@@ -7,6 +7,7 @@ import "./styles-home.css";
 import Navbar from "../Components/Navbar";
 import HomeComp from "../Components/HomeComp/HomeComp";
 import { BrowserRouter as Router, Route, Switch}  from 'react-router-dom';
+import AboutusComp from "../Components/AboutusComp";
 
 class FullpageWrapper extends React.Component {
   onLeave(origin, destination, direction) {
@@ -32,7 +33,7 @@ class FullpageWrapper extends React.Component {
           navigation={true}
           navigationColor={["white"]}
           scrollOverflow={true}
-          sectionsColor={["white", "orange"]}
+          sectionsColor={["white", "white"]}
           onLeave={this.onLeave.bind(this)}
           afterLoad={this.afterLoad.bind(this)}
           render={({ state, fullpageApi }) => {
@@ -44,7 +45,7 @@ class FullpageWrapper extends React.Component {
                     <HomeComp />
                   </div>
                   <div className="section">
-                    <h3>About Us</h3>
+                    <AboutusComp />
                   </div>
                   <div className="section">
                     <h3>Services</h3>

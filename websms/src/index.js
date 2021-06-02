@@ -7,11 +7,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    {/* <Map /> */}
-    {/* <Lifecycle /> */}
-    {/* <StateProps /> */}
-    {/* <dasar /> */}
-    {/* <Dasar /> */}
   </React.StrictMode>,
   document.getElementById('root')
 );

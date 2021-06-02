@@ -1,6 +1,5 @@
 import React from 'react'
 import {Row, Col} from "react-bootstrap"
-import img from "../../images/aboutus.png"
 import "./HomeComp.css"
 
 const HomeComp = () => {
@@ -9,7 +8,7 @@ const HomeComp = () => {
             <div className="container" >
                 <Row className="justify-content-md-center">
                     
-                    <Col className="sub" md={{ span: 6, offset: 5 }}>   
+                    <Col className="sub-home" md={{ span: 6, offset: 5 }}>   
                         <h1>SMS</h1>
                         <h2>"Jasa Cetak dalam Satu Atap"</h2>
                     </Col>  
