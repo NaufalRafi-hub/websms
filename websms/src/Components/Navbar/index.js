@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import {Row, Col} from "react-bootstrap"
 import {NavLink as Link} from 'react-router-dom'
 import {GiHamburgerMenu} from 'react-icons/gi'
 
@@ -8,13 +9,14 @@ export const Nav = styled.nav`
     font-weight: bold;
     font-color: #0000;
     position: absolute;
-    top: 5px;
     z-index: 999;
     height : 80px;
-    display: flex;
+    display: inline-block;
+    top: 5px;
 `;
 
 export const NavLink = styled(Link)`
+    margin-top: 10px;
     color: #24275C;
     font-size: 2rem;
     align-items: center;
@@ -23,34 +25,38 @@ export const NavLink = styled(Link)`
 
     @media screen and (max-width: 400px) {
         position: absolute;
-        top: 10px;
-        left: 25px;
     }
 `;
 
 export const NavIcon = styled.div `
-    
-    display: flex;
     cursor: pointer;
     color: #24275C;
-    margin=right: -22px;
+    display: inline-block;
 `;
 
 export const Bars = styled(GiHamburgerMenu) `
     font-size: 2rem;
-    margin=right: -22px;
+    margin-top: 5px;
 `;
 
 const Navbar = () => {
     return (
         <div className="container">
-            <Nav>
-                <NavLink to="/">logo</NavLink>
-                <NavIcon>
-                    <Bars />
-                </NavIcon>
-                {/* <h2>logo</h2> */}
-            </Nav>
+            <Row>
+                <Col md={4}>
+                    <Nav>
+                        <NavLink to="/">SMS</NavLink>
+                    </Nav>
+                </Col>
+                <Col className="container-fluid d-grid gap-2 d-md-flex justify-content-md-end">
+                    <Nav>
+                        <NavIcon>
+                            <Bars />
+                        </NavIcon>
+                        {/* <h2>logo</h2> */}
+                    </Nav>
+                </Col>
+            </Row>
         </div>
         
     )
