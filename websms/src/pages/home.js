@@ -45,10 +45,10 @@ class FullpageWrapper extends React.Component {
                   <div className="section section1">
                     <HomeComp />
                   </div>
-                  <div className="section">
+                  <div className="section section2">
                     <AboutusComp />
                   </div>
-                  <div className="section">
+                  <div className="container section section3">
                     <ServicesComp />
                   </div>
                   <div className="section">

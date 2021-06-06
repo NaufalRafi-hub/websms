@@ -4,3 +4,26 @@
     font-weight: bold;
     font-family: 'Viga', sans-serif;
 }
+
+.judul {
+    margin-top: 0px;
+    top: 0px;
+}
+
+.content h1{
+    font-family: 'Viga', sans-serif;
+    color: #24275C;
+    font-size: 28px;
+    display: flex;
+}
+
+.content {
+    
+    padding-top: 5px;
+}
+.content h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    text-justify: auto;
+    line-height: 1.5;
+}
