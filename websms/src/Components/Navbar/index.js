@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import {Row, Col} from "react-bootstrap"
 import {NavLink as Link} from 'react-router-dom'
-import {GiHamburgerMenu} from 'react-icons/gi'
+import {BsList} from 'react-icons/bs'
 
 export const Nav = styled.nav`
     background: transparent;
@@ -34,12 +34,12 @@ export const NavIcon = styled.div `
     display: inline-block;
 `;
 
-export const Bars = styled(GiHamburgerMenu) `
+export const Bars = styled(BsList) `
     font-size: 2rem;
     margin-top: 5px;
 `;
 
-const Navbar = () => {
+const Navbar = ({toggle}) => {
     return (
         <div className="container">
             <Row>
@@ -50,7 +50,7 @@ const Navbar = () => {
                 </Col>
                 <Col className="container-fluid d-grid gap-2 d-md-flex justify-content-md-end">
                     <Nav>
-                        <NavIcon>
+                        <NavIcon onClick={toggle}>
                             <Bars />
                         </NavIcon>
                         {/* <h2>logo</h2> */}

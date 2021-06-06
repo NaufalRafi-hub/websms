@@ -1,5 +1,5 @@
 import React from 'react'
-import {Col, Row, Button} from "react-bootstrap"
+import {Col, Row} from "react-bootstrap"
 import "./ServicesComp.css"
 
 const ServicesComp = () => {
