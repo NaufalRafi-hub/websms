@@ -5,6 +5,8 @@
     font-weight: bold;
     font-family: 'Viga', sans-serif;
     text-align: center;
+    position: relative;
+    align-items: center;
 }
 
 .sub-about p {

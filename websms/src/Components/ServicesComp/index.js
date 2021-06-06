@@ -10,7 +10,7 @@ const ServicesComp = () => {
             </div>
             <div className="content">
                 {/* row pertama */}
-                <Row>
+                <Row className="sub-judul">
                     <Col>
                         <h1>
                             Display
@@ -28,53 +28,141 @@ const ServicesComp = () => {
                     </Col>
                     <Col>
                         <h1>
-                            Branding
+                            Installation
                         </h1>
                     </Col>
                 </Row>
                 {/* row KEDUA */}
-                <Row>
-                    <Col>
-                        <h2>
-                            Kami menyediakan display untuk advertisement
-                        </h2>
-                        
-                    </Col>
-                    <Col>
-                        <h2>
-                            Bentuk Sign sebagai pengenal logo dalam perusahaan anda
-                        </h2>
-                        
-                    </Col>
-                    <Col>
-                        <h2>
-                            Booth/Stand kami sediakan berbagai jenis, cocok untuk acara dalam mall
-                        </h2>
-                        
-                    </Col>
-                    <Col>
-                        <h2>
-                            Kami membuat branding anda menjadi kuat dan tersampaikan kedalam masyarakat
-                        </h2>
-                        
-                    </Col>
-                </Row>
+                <div className="isi-services">
+                    <Row>
+                        <Col>
+                            <h2>
+                                Display produk yang akan meningkatkan minat beli konsumen dalam pembelian barang yang terpajang.
+                            </h2>
+                            
+                        </Col>
+                        <Col>
+                            <h2>
+                                Sign sebagai pemerjelas logo dan informasi dari brand sesuai dengan kebutuhan perusahaan.
+                            </h2>
+                            
+                        </Col>
+                        <Col>
+                            <h2>
+                                Variasi booth dan stand sesuai dengan kebutuhan brand untuk penjualan produk dan penyampaian informasi
+                            </h2>
+                            
+                        </Col>
+                        <Col>
+                            <h2>
+                                Berbagai bentuk instalasi sebagai unique attraction terhadap produk dan brand.
+                            </h2>
+                            
+                        </Col>
+                    </Row>
+                </div>
                 {/* row ketiga */}
-                <Row>
-                    <Col>
-                        <hr></hr>
-                        
-                    </Col>
-                    <Col>
-                        <hr></hr>
-                    </Col>
-                    <Col>
-                        <hr></hr>
-                    </Col>
-                    <Col>
-                        <hr></hr>
-                    </Col>
-                </Row>
+                <div className="hr-below">
+                    <Row>
+                        <Col>
+                            <hr></hr>
+                            
+                        </Col>
+                        <Col>
+                            <hr></hr>
+                        </Col>
+                        <Col>
+                            <hr></hr>
+                        </Col>
+                        <Col>
+                            <hr></hr>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <h3>Table Display</h3>
+                        </Col>
+                        <Col>
+                            <h3>Neon Box</h3>
+                        </Col>
+                        <Col>
+                            <h3>Photobooth</h3>
+                        </Col>
+                        <Col>
+                            <h3>Packaging</h3>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <h3>Floor Display</h3>
+                        </Col>
+                        <Col>
+                            <h3>Billboard</h3>
+                        </Col>
+                        <Col>
+                            <h3>Stage</h3>
+                        </Col>
+                        <Col>
+                            <h3>Pillar Branding</h3>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <h3>Wall Display</h3>
+                        </Col>
+                        <Col>
+                            <h3>Floor Sign</h3>
+                        </Col>
+                        <Col>
+                            <h3>Booth Camp</h3>
+                        </Col>
+                        <Col>
+                            <h3>Truck Sticker</h3>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <h3>Backwall</h3>
+                        </Col>
+                        <Col>
+                            <h3></h3>
+                        </Col>
+                        <Col>
+                            <h3>Backdrop</h3>
+                        </Col>
+                        <Col>
+                            <h3>Standee Acrylic</h3>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <h3>Bar Top</h3>
+                        </Col>
+                        <Col>
+                            <h3></h3>
+                        </Col>
+                        <Col>
+                            <h3>DJ Table</h3>
+                        </Col>
+                        <Col>
+                            <h3>Totem </h3>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <h3>Shelftalker</h3>
+                        </Col>
+                        <Col>
+                            <h3></h3>
+                        </Col>
+                        <Col>
+                            <h3></h3>
+                        </Col>
+                        <Col>
+                            <h3></h3>
+                        </Col>
+                    </Row>
+                </div>
             </div>
             
         </div>

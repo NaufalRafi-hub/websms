@@ -1,15 +1,23 @@
-.sub-services h1{
+
+.judul {
+    margin-top: 0px;
+    top: 83px;
+    position: absolute;
+    padding-bottom: 50px;
+    
+}
+
+.judul h1{
     font-size: 90px;
     color: #FFCC33;
     font-weight: bold;
     font-family: 'Viga', sans-serif;
 }
 
-.judul {
-    margin-top: 0px;
-    top: 0px;
+.content {
+    margin-top: 90px;
+    justify-content: center;
 }
-
 .content h1{
     font-family: 'Viga', sans-serif;
     color: #24275C;
@@ -17,13 +25,32 @@
     display: flex;
 }
 
-.content {
-    
-    padding-top: 5px;
-}
+
+
 .content h2{
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
+    text-align: left;
+    text-justify: none;
+    line-height: 2;
+}
+
+.isi-services {
+    padding-top: 51px;
+    margin-bottom: 50px;
+}
+
+hr {
+    border: 1px solid #24275C
+}
+
+.content h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
     text-justify: auto;
     line-height: 1.5;
 }
+
+/* .hr-below {
+    padding-top: 30px;
+} */
