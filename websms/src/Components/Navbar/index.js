@@ -8,11 +8,11 @@ export const Nav = styled.nav`
     background: transparent;
     font-weight: bold;
     font-color: #0000;
-    position: absolute;
-    z-index: 999;
+    z-index: 998;
     height : 80px;
-    display: inline-block;
+    display: flex;
     top: 5px;
+    position: fixed;
 `;
 
 export const NavLink = styled(Link)`

@@ -1,4 +1,4 @@
-import React , {setState} from "react";
+import React , {useState} from "react";
 import ReactDOM from "react-dom";
 import "fullpage.js/vendors/scrolloverflow"; // Optional. When using scrollOverflow:true
 import ReactFullpage from "@fullpage/react-fullpage";
@@ -19,26 +19,30 @@ class FullpageWrapper extends React.Component {
     console.log("After load: " + destination.index);
   }
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      isOpen: false
+    };
+  }
   render() {
-    const [isOpen, setIsOpen] = this.setState({isOpen: false});
-
-    const toggle = () => {
-      setIsOpen(!isOpen);
-    }
+  
+      // const [isOpen, setIsOpen] = useState(false);
 
     return (
       <>
-        {/* <Navbar /> */}
-        <Router>
-          <Switch>
-            <Navbar toggle={toggle} />
-            <SidebarComp isOpen={isOpen} toggle={toggle}/>
-            {/* <Route path="/" component={Navbar} exact/> */}
-            {/* <Route path="/" component={Navbar toggle={toggle}} exact />
-            <Route path="/" component={SidebarComp isOpen={isOpen} toggle={toggle}} exact /> */}
-            {/* <Route path="/aboutus" component={SigninPage} exact/> */}
-          </Switch>
-        </Router>
+        {/* <Navbar  /> */}
+        {/* <SidebarComp isOpen={isOpen} toggle={toggle}/> */}
+            <Router>
+                    <Navbar toggle = {() => this.setState({isOpen: true})}/>
+                    <SidebarComp isOpen={this.state.isOpen} toggle = {() => this.setState({isOpen: false})}/>
+                    {/* <Sidebar /> */}
+                    {/* <Route path="/" component={Navbar} exact/> */}
+                    {/* <Route path="/" component={Navbar toggle={toggle}} exact />
+                    // <Route path="/" component={SidebarComp isOpen={isOpen} toggle={toggle}} exact /> */}
+                    {/* <Route path="/aboutus" component={SigninPage} exact/> */}
+                  
+            </Router>
 
         <ReactFullpage
           navigation={true}
@@ -47,6 +51,7 @@ class FullpageWrapper extends React.Component {
           sectionsColor={["white", "white"]}
           onLeave={this.onLeave.bind(this)}
           afterLoad={this.afterLoad.bind(this)}
+          
           render={({ state, fullpageApi }) => {
             return (
               <>

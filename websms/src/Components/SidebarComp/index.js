@@ -15,7 +15,7 @@ const SidebarComp = ({isOpen, toggle}) => {
       </Icon>
       <SidebarMenu>
         <SidebarLink to="/">Home</SidebarLink>
-        <SidebarLink to="/">About US</SidebarLink>
+        <SidebarLink to="/">About Us</SidebarLink>
         <SidebarLink to="/">Services</SidebarLink>
         <SidebarLink to="/">Our Work</SidebarLink>
         <SidebarLink to="/">Track Order</SidebarLink>
