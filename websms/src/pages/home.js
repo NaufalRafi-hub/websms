@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles-home.css";
 import Navbar from "../Components/Navbar";
 import HomeComp from "../Components/HomeComp/HomeComp";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router} from "react-router-dom";
 import AboutusComp from "../Components/AboutusComp";
 import ServicesComp from "../Components/ServicesComp";
 import SidebarComp from "../Components/SidebarComp";
@@ -26,20 +26,12 @@ class FullpageWrapper extends React.Component {
     };
   }
   render() {
-  
-      // const [isOpen, setIsOpen] = useState(false);
 
     return (
       <>
-        {/* <Navbar  /> */}
-        {/* <SidebarComp isOpen={isOpen} toggle={toggle}/> */}
             <Router>
                     <Navbar toggle = {() => this.setState({isOpen: true})}/>
                     <SidebarComp isOpen={this.state.isOpen} toggle = {() => this.setState({isOpen: false})}/>
-                    {/* <Sidebar /> */}
-                    {/* <Route path="/" component={Navbar} exact/> */}
-                    {/* <Route path="/" component={Navbar toggle={toggle}} exact />
-                    // <Route path="/" component={SidebarComp isOpen={isOpen} toggle={toggle}} exact /> */}
                     {/* <Route path="/aboutus" component={SigninPage} exact/> */}
                   
             </Router>
@@ -57,22 +49,22 @@ class FullpageWrapper extends React.Component {
               <>
                 <div id="fullpage-wrapper">
                   {/* <Navbar /> */}
-                  <div className="section section1">
+                  <div className="section section1" data-anchor="page1">
                     <HomeComp />
                   </div>
-                  <div className="section section2">
+                  <div className="section section2" data-anchor="page2">
                     <AboutusComp />
                   </div>
-                  <div className="container section section3">
+                  <div className="container section section3" data-anchor="page3">
                     <ServicesComp />
                   </div>
-                  <div className="section">
+                  <div className="section" data-anchor="page4">
                     <h3>Our Work</h3>
                   </div>
-                  <div className="section">
+                  <div className="section" data-anchor="page5">
                     <h3>Track Order</h3>
                   </div>
-                  <div className="section">
+                  <div className="section" data-anchor="page6">
                     <h3>Contact Us</h3>
                   </div>
                 </div>

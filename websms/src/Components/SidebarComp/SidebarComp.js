@@ -5,7 +5,7 @@ import {BsX} from 'react-icons/bs'
 export const SidebarContainer = styled.aside`
     position: fixed;
     z-index: 999;
-    width: 50vw;
+    width: 50%;
     height: 100%;
     background: #24275C;
     display: grid;
@@ -16,7 +16,7 @@ export const SidebarContainer = styled.aside`
 
     @media screen and (max-width: 400px) {
         width: 100%;
-    }
+      }
 `;
 
 export const CloseIcon = styled(BsX)`
@@ -25,11 +25,11 @@ export const CloseIcon = styled(BsX)`
 
 export const Icon = styled.div`
     position: absolute;
-    top: 1.2rem;
-    right: 1.5rem;
+    top: 1.3rem;
+    left: 2.3rem;
     background: transparent;
     border: transparent;
-    font-size: 2rem;
+    font-size: 2.2rem;
     cursor: pointer;
     outline: none;
 `
@@ -37,17 +37,18 @@ export const Icon = styled.div`
 export const SidebarMenu = styled.div`
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 80px);
-    text-align-items: center;
+    grid-template-rows: repeat(6, 50px);
+    align-items: center;
 
     @media screen and (max-width: 480px) {
-        grid-template-rows: repeat(6, 60px);
+        grid-template-rows: repeat(6, 40px);
     }
 `
 
-export const SidebarLink = styled(Link)`
+export const SidebarLink = styled.a`
     display: flex;
     align-items: center;
+    text-align: left;
     justify-content: center;
     font-size: 1.5rem;
     text-decoration: none;

@@ -14,12 +14,12 @@ const SidebarComp = ({isOpen, toggle}) => {
         <CloseIcon />
       </Icon>
       <SidebarMenu>
-        <SidebarLink to="/">Home</SidebarLink>
-        <SidebarLink to="/">About Us</SidebarLink>
-        <SidebarLink to="/">Services</SidebarLink>
-        <SidebarLink to="/">Our Work</SidebarLink>
-        <SidebarLink to="/">Track Order</SidebarLink>
-        <SidebarLink to="/">Contact Us</SidebarLink>
+        <SidebarLink href="#page1">Home</SidebarLink>
+        <SidebarLink href="#page2">About Us</SidebarLink>
+        <SidebarLink href="#page3">Services</SidebarLink>
+        <SidebarLink href="#page4">Our Work</SidebarLink>
+        <SidebarLink href="#page5">Track Order</SidebarLink>
+        <SidebarLink href="#page6">Contact Us</SidebarLink>
       </SidebarMenu>
     </SidebarContainer>
   );
