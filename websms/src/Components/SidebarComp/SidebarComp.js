@@ -1,6 +1,9 @@
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
 import {BsX} from 'react-icons/bs'
+
+const media = {
+    mobile: '@media(max-width: 400px)'
+}
 
 export const SidebarContainer = styled.aside`
     position: fixed;
@@ -12,11 +15,15 @@ export const SidebarContainer = styled.aside`
     align-items: center;
     top: 0;
     transition: 0.6s ease-in-out;
-    right: ${({ isOpen }) => (isOpen ? '0' : '-1000px')};
+    right: ${({ isOpen }) => (isOpen ? '0' : '-10000px')};
 
-    @media screen and (max-width: 400px) {
+    ${media.mobile}{
         width: 100%;
-      }
+    }
+    @media only screen and (max-width: 400px) {
+        width: 100%;
+    } 
+
 `;
 
 export const CloseIcon = styled(BsX)`
@@ -40,9 +47,10 @@ export const SidebarMenu = styled.div`
     grid-template-rows: repeat(6, 50px);
     align-items: center;
 
-    @media screen and (max-width: 480px) {
+    ${media.mobile}{
         grid-template-rows: repeat(6, 40px);
     }
+    
 `
 
 export const SidebarLink = styled.a`

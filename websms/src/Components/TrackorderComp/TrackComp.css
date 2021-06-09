@@ -1,0 +1,53 @@
+.track {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.content-track {
+    padding-top: 60px;
+}
+.judul-track h1 {
+    font-family: 'Viga', sans-serif;
+    color: #FFCC33;
+    font-size: 90px;
+
+      
+}
+@media (max-width: 400px) {  
+    .judul-track h1 {
+        font-size: 30px;
+    }
+    
+}
+@media only screen and (max-width: 400px) {
+    .judul-track h1 {
+        font-size: 30px;
+    }
+} 
+
+.content-track h2 {
+    color:black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+}
+.track-icon {
+    padding-top: 60px;
+}
+.track-or {
+    padding-top: 60px;
+}
+.btn-div {
+    padding-top: 60px;
+}
+.btn-track {
+    background:#24275C;
+    padding: 8px 23px;
+    font-size: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    
+}
+.btn-track:hover {
+    background:#3a3e91;
+}

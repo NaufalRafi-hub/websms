@@ -1,4 +1,4 @@
-import React , {useState} from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 import "fullpage.js/vendors/scrolloverflow"; // Optional. When using scrollOverflow:true
 import ReactFullpage from "@fullpage/react-fullpage";
@@ -10,6 +10,7 @@ import { BrowserRouter as Router} from "react-router-dom";
 import AboutusComp from "../Components/AboutusComp";
 import ServicesComp from "../Components/ServicesComp";
 import SidebarComp from "../Components/SidebarComp";
+import TrackorderComp from "../Components/TrackorderComp";
 
 class FullpageWrapper extends React.Component {
   onLeave(origin, destination, direction) {
@@ -58,13 +59,13 @@ class FullpageWrapper extends React.Component {
                   <div className="container section section3" data-anchor="page3">
                     <ServicesComp />
                   </div>
-                  <div className="section" data-anchor="page4">
+                  <div className="container section" data-anchor="page4">
                     <h3>Our Work</h3>
                   </div>
-                  <div className="section" data-anchor="page5">
-                    <h3>Track Order</h3>
+                  <div className="container section" data-anchor="page5">
+                    <TrackorderComp />
                   </div>
-                  <div className="section" data-anchor="page6">
+                  <div className="container section" data-anchor="page6">
                     <h3>Contact Us</h3>
                   </div>
                 </div>
