@@ -7,11 +7,11 @@ import line from "../../images/line-about.png"
 const AboutusComp = () => {
     return (
         <div className="container">
-            <Row >
-                <Col className="sub-about" md={{ span: 6, offset: 3 }}>
+            <Row className="justify-content-md-center">
+                <Col className="sub-about" >
                     <h1>About Us</h1>
                     <div className="img-about">
-                        <img src={aboutus} alt="Kantor" width="400"/>  
+                        <img src={aboutus} alt="Kantor" className="img-about2" width="400"/>  
                     </div>
                     <div className="isi" >
                         <p>Kami adalah Perusahaan yang terletak di bintaro, Indonesia. CV. Sinar Media Sakti sebuah perusahaan yang dari sejak awal berkomitmen untuk bergerak dalam bidang pelayanan barang dan jasa dengan spesialisasi di bidang cetak. </p>               

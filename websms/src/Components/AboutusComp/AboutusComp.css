@@ -19,10 +19,13 @@
 
 .isi {
     padding-top: 30px;
+    margin-right: 30%;
+    margin-left: 30%;
+    
 }
 
 .btn-about {
-    margin-right: 285px;
+    margin-right: 325px;
     background:#24275C;
     padding: 8px 23px;
     font-size: 12px;
@@ -36,7 +39,7 @@
 
 .line-about{
     padding-top: 10px;
-    margin-left: 285px;
+    margin-left: -10000000px;
     display: flex;
 }
 
@@ -46,10 +49,29 @@
 }
 
 
-@media screen and (max-width:600px) and (min-width: 319px) {
+@media screen and (max-width:500px) and (min-width: 319px) {
     .line-about{
         margin-left: -10000000px;
+        opacity: 0;
     }
+    .sub-about h1 {
+        font-size: 50px;
+        
+    }
+    .isi p{
+        font-size: 12px;
+    }
+    .btn-about {
+        margin-top: 18px;
+        margin-right: 25px;
+    }
+    .img-about2{
+        width: 80%;
+    }
+
+}
+@media screen and (max-width:768px) and (min-width: 501px) {
+    
     .sub-about h1 {
         font-size: 60px;
         
@@ -57,12 +79,44 @@
     .isi p{
         font-size: 13px;
     }
-    .isi {
-        padding-left: 30px;
-        padding-right: 30px;
+    
+    .btn-about {
+        margin-right: 45px;
+    }
+}
+@media screen and (max-width:992px) and (min-width: 769px) {
+    .sub-about h1 {
+        font-size: 70px;
+        
     }
     .btn-about {
-        margin-right: 25px;
+        margin-right: 120px;
     }
-
+    .isi {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
 }
+
+@media screen and (max-width: 992px) and (min-width:0px){
+    .isi {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width:993px){
+    .isi {
+        margin-right: 27%;
+        margin-left: 27%;
+    }
+    .btn-about {
+        margin-right: 250px;
+    }
+}
+
+
+
+
+    
+

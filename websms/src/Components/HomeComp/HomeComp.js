@@ -6,7 +6,7 @@ const HomeComp = () => {
     return (
         <div className="container-fluid">
             <div className="container" >
-                <Row className="justify-content-md-center">
+                <Row className="justify-content-center">
                     
                     <Col className="sub-home" md={{ span: 6, offset: 5 }}>   
                         <h1>SMS</h1>

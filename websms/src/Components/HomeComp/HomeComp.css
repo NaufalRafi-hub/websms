@@ -23,3 +23,20 @@
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
 }
+
+@media screen and (max-width:600px) and (min-width: 319px) {
+    .sub-home h2 {
+        font-size: 20px;
+    }
+    .sub-home h1 {
+        font-size: 120px;
+        display: flex;
+        
+    }
+    .sub-home {
+        margin-top: -230px;
+    }
+
+
+}
+
