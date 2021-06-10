@@ -1,65 +1,67 @@
-import React from 'react'
-import styled from 'styled-components'
-import {Row, Col} from "react-bootstrap"
-import {NavLink as Link} from 'react-router-dom'
-import {BsList} from 'react-icons/bs'
-
+import React from "react";
+import styled from "styled-components";
+import { Row, Col } from "react-bootstrap";
+import { NavLink as Link } from "react-router-dom";
+import { BsList } from "react-icons/bs";
 export const Nav = styled.nav`
     background: transparent;
-    font-weight: bold;
-    font-color: #0000;
-    z-index: 998;
-    height : 80px;
+    height: 80px;
     display: flex;
-    top: 5px;
+    justify-content: start;
+    font-weight: 700;
+    z-index: 998;
     position: fixed;
+    text-decoration: none;
 `;
 
 export const NavLink = styled(Link)`
-    margin-top: 10px;
-    color: #24275C;
+    color: #24275c;
     font-size: 2rem;
+    display: flex;
     align-items: center;
     text-decoration: none;
     cursor: pointer;
+    margin-left: 50px;
 
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width:600px) and (min-width: 319px) {
         position: absolute;
+        top: 18px;
+        margin-left: 18px;
     }
 `;
 
-export const NavIcon = styled.div `
-    cursor: pointer;
-    color: #24275C;
-    display: inline-block;
+export const NavIcon = styled.div`
+  position: fixed;
+  top: 26px;
+  right: 80px;
+  cursor: pointer;
+  color: #24275c;
+    @media screen and (max-width:600px) and (min-width: 319px) {
+        right: 25px;
+    }
+
 `;
 
-export const Bars = styled(BsList) `
-    font-size: 2rem;
-    margin-top: 5px;
+export const Bars = styled(BsList)`
+  font-size: 2rem;
+
+//   transform: translate(-50%, -15%);
 `;
 
-const Navbar = ({toggle}) => {
-    return (
-        <div className="container">
-            <Row>
-                <Col md={4}>
-                    <Nav>
-                        <NavLink to="/">SMS</NavLink>
-                    </Nav>
-                </Col>
-                <Col className="container-fluid d-grid gap-2 d-md-flex justify-content-md-end">
-                    <Nav>
-                        <NavIcon onClick={toggle}>
-                            <Bars />
-                        </NavIcon>
-                        {/* <h2>logo</h2> */}
-                    </Nav>
-                </Col>
-            </Row>
-        </div>
-        
-    )
-}
 
-export default Navbar
+const Navbar = ({ toggle }) => {
+  return (
+    <div className="container-fluid">
+        <Nav>
+          <NavLink to="/">SMS</NavLink>
+          <NavIcon onClick={toggle}>
+                <div className="justify-content-end">
+                    <Bars />
+                </div>
+          </NavIcon>
+        </Nav>
+    </div>
+  );
+};
+
+export default Navbar;
