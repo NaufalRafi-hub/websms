@@ -4,7 +4,7 @@ import "./TrackComp.css"
 import {SearchIcon} from "./TrackComp"
 
 
-const index = () => {
+const TrackorderComp = () => {
     return (
         <div className="container track">
             <Row>
@@ -56,4 +56,4 @@ const index = () => {
     )
 }
 
-export default index
+export default TrackorderComp

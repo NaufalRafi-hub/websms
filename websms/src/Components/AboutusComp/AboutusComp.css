@@ -28,14 +28,41 @@
     font-size: 12px;
     border-radius: 20px;
     cursor: pointer;
-    display: inline-block;
+    display: flex;
 }
 .btn-about:hover {
-    background:#3a3e91;
+    background:#141970;
 }
 
 .line-about{
     padding-top: 10px;
     margin-left: 285px;
-    display: inline-block;
+    display: flex;
+}
+
+.img-about  {
+    text-align: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width:600px) and (min-width: 319px) {
+    .line-about{
+        margin-left: -10000000px;
+    }
+    .sub-about h1 {
+        font-size: 60px;
+        
+    }
+    .isi p{
+        font-size: 13px;
+    }
+    .isi {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .btn-about {
+        margin-right: 25px;
+    }
+
 }

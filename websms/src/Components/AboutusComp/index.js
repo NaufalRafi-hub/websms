@@ -10,8 +10,10 @@ const AboutusComp = () => {
             <Row >
                 <Col className="sub-about" md={{ span: 6, offset: 3 }}>
                     <h1>About Us</h1>
-                    <img src={aboutus} alt="Kantor" width="510px"/>  
-                    <div className="isi">
+                    <div className="img-about">
+                        <img src={aboutus} alt="Kantor" width="400"/>  
+                    </div>
+                    <div className="isi" >
                         <p>Kami adalah Perusahaan yang terletak di bintaro, Indonesia. CV. Sinar Media Sakti sebuah perusahaan yang dari sejak awal berkomitmen untuk bergerak dalam bidang pelayanan barang dan jasa dengan spesialisasi di bidang cetak. </p>               
                     </div>
                     
@@ -22,7 +24,9 @@ const AboutusComp = () => {
                     <img src={line} alt="garis" className="line-about"/> 
                 </Col>
                 <Col className="sub-about" >
-                    <Button className="btn-about" variant="dark">See Detail</Button>
+                    <div className="btn-about-div">
+                        <Button className="btn-about" variant="dark">See Detail</Button>
+                    </div>
                 </Col>
             </Row>
         

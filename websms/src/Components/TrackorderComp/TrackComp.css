@@ -13,17 +13,24 @@
 
       
 }
-@media (max-width: 400px) {  
+@media only screen and (max-width: 600px) and (min-width: 319px) {
+    .judul-track h1 {
+        font-size: 70px;
+    }
+} 
+/* @media (max-width: 400px) {  
     .judul-track h1 {
         font-size: 30px;
     }
-    
+    @media only screen and (max-width: 600px) and (min-width: 319px) {
+        grid-template-rows: repeat(6, 40px);
+    } 
 }
 @media only screen and (max-width: 400px) {
     .judul-track h1 {
         font-size: 30px;
     }
-} 
+}  */
 
 .content-track h2 {
     color:black;
