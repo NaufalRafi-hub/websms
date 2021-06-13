@@ -5,12 +5,13 @@ import ReactFullpage from "@fullpage/react-fullpage";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles-home.css";
 import Navbar from "../Components/Navbar";
-import HomeComp from "../Components/HomeComp/HomeComp";
+import HomeComp from "../Components/HomeComp";
 import { BrowserRouter as Router} from "react-router-dom";
 import AboutusComp from "../Components/AboutusComp";
 import ServicesComp from "../Components/ServicesComp";
 import SidebarComp from "../Components/SidebarComp";
 import TrackorderComp from "../Components/TrackorderComp";
+import ContactusComp from "../Components/ContactusComp";
 
 class FullpageWrapper extends React.Component {
   onLeave(origin, destination, direction) {
@@ -66,7 +67,7 @@ class FullpageWrapper extends React.Component {
                     <TrackorderComp />
                   </div>
                   <div className="container section" data-anchor="page6">
-                    <h3>Contact Us</h3>
+                    <ContactusComp />
                   </div>
                 </div>
               </>
