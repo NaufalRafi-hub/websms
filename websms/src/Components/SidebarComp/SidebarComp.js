@@ -14,7 +14,7 @@ export const SidebarContainer = styled.aside`
     display: grid;
     align-items: center;
     top: 0;
-    transition: 0.6s ease-in-out;
+    transition: 1s ease-in-out;
     right: ${({ isOpen }) => (isOpen ? '0' : '-10000px')};
 
     
@@ -58,14 +58,15 @@ export const SidebarLink = styled.a`
     justify-content: center;
     font-size: 1.5rem;
     text-decoration: none;
-    transition: 0.3s ease-in-out;
+    transition: 0.1s ease-in-out;
     text-decoration: none;
     color: #fff;
     cursor: pointer;
     
     &:hover {
         color: #FFCC33;
-        transition: 0.3s ease-in-out;
+        font-size: 2rem;
+        transition: 0.1s ease-in-out;
         text-decoration: none;
     }
 `;
