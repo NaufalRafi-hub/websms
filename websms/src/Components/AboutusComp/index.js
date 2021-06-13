@@ -19,15 +19,14 @@ const AboutusComp = () => {
                     
                 </Col>
             </Row>
-            <Row>
-                <Col className="sub-about" >
-                    <img src={line} alt="garis" className="line-about"/> 
-                </Col>
-                <Col className="sub-about" >
-                    <div className="btn-about-div">
+            <Row >
+                <div className="row-line">
+                    <div className="line-about" >
+                    </div>
+                    <div className="div-btn">
                         <Button className="btn-about" variant="dark">See Detail</Button>
                     </div>
-                </Col>
+                </div>  
             </Row>
         
         </div>
