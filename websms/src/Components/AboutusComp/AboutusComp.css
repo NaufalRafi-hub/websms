@@ -19,14 +19,16 @@
 
 .isi {
     padding-top: 30px;
-    margin-right: 30%;
-    margin-left: 30%;
+    margin-right: auto;
+    margin-left: auto;
+    width: min(90%, 27em);
     
 }
 .row-line {
     display: inline-flex;
-    margin-right: 30%;
-    margin-left: 30%;
+    margin-right: auto;
+    margin-left: auto;
+    width: min(90%, 28em);
     gap: 20px;
 }
 .btn-about {
@@ -42,19 +44,43 @@
 }
 .line-about{
     border-top: 2px solid #24275C;
-    padding-left: 320px;
+    /* padding-left: 320px; */
+    padding-left: 70%;
     margin-top: 19px;
     margin-left: 5px;
     
+}
+.div-btn {
+    margin-left: 340px;
+    position: fixed;
 }
 
 .img-about  {
     text-align: center;
     align-items: center;
 }
+@media screen and (max-width:380px) {
+    .sub-about h1 {
+        font-size: 50px;
+        
+    }
+    .isi p{
+        font-size: 12px;
+    }
+    
+    .img-about2{
+        width: 80%;
+    }
+    .div-btn {
+        right: 40px;
+        margin-left: auto;
+    }
+    .line-about {
+        padding-left: 50%;
+    }
+}
 
-
-@media screen and (max-width:513px) and (min-width: 319px) {
+@media screen and (max-width:470px) and (min-width:380px){
     
     .sub-about h1 {
         font-size: 50px;
@@ -67,20 +93,17 @@
     .img-about2{
         width: 80%;
     }
-    .isi {
-        margin-left: 10%;
-        margin-right: 10%;
+    .div-btn {
+        right: 40px;
+        margin-left: auto;
     }
-    .row-line {
-        margin-right: 10%;
-        margin-left: 10%;
-    }
-    .line-about{
-        padding-left: 160px;
+    .line-about {
+        padding-left: 60%;
     }
 
 }
-@media screen and (max-width:768px) and (min-width: 513px) {
+
+@media screen and (max-width:768px) {
     
     .sub-about h1 {
         font-size: 60px;
@@ -89,63 +112,16 @@
     .isi p{
         font-size: 13px;
     }
-    
-    .isi {
-        margin-left: 11%;
-        margin-right: 11%;
-    }
-    .row-line {
-        margin-right: 11%;
-        margin-left: 12%;
-    }
     .line-about{
-        padding-left: 270px;
+        margin-left: 14px;
+        /* padding-left: 300px; */
     }
-        
-    
 }
 @media screen and (max-width:992px) and (min-width: 769px) {
     .sub-about h1 {
         font-size: 70px;
         
     }
-    .isi {
-        margin-left: 20%;
-        margin-right: 20%;
-    }
-    .row-line {
-        margin-right: 20%;
-        margin-left: 20%;
-    }
-    .line-about{
-        padding-left: 300px;
-    }
-}
-
-@media screen and (max-width: 993px) and (min-width:992px){
-    .isi {
-        margin-left: 20%;
-        margin-right: 20%;
-    }
-    .row-line {
-        margin-right: 20%;
-        margin-left: 26.5%;
-    }
-}
-
-@media screen and (max-width: 1199px) and (min-width:993px){
-    .isi {
-        margin-right: 27%;
-        margin-left: 27%;
-    }
-    .row-line {
-        margin-right: 27%;
-        margin-left: 27%;
-    }
-    .line-about{
-        padding-left: 310px;
-    }
-
 }
 
 
