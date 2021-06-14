@@ -12,6 +12,9 @@ export const Nav = styled.nav`
     z-index: 998;
     position: fixed;
     text-decoration: none;
+    outline: none;
+    background: transparent;
+    border: transparent;
 `;
 
 export const NavLink = styled(Link)`
@@ -22,9 +25,14 @@ export const NavLink = styled(Link)`
     text-decoration: none;
     cursor: pointer;
     margin-left: 50px;
+    position: fixed;
+    top: 15px;
+    outline: none;
+    background: transparent;
+    border: transparent;
 
     @media screen and (max-width:600px) and (min-width: 319px) {
-        position: absolute;
+        position: fixed;
         top: 18px;
         margin-left: 18px;
     }

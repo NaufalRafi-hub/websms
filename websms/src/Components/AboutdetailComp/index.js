@@ -1,11 +1,23 @@
-import React from 'react'
+import React from "react";
+import "./AboutdetailComp.css";
+import aboutus from "../../images/aboutus.png"
+import { BackIcon, BackIconDiv } from "./AboutdetailComp";
 
 const AboutdetailComp = () => {
-    return (
-        <div>
-            <h1>Halo ini about us</h1>
-        </div>
-    )
-}
+  return (
+    <div className="container">
+      <div className="judul-aboutdet">
+        <h1>About Us</h1>
+        <BackIconDiv>
+          <BackIcon />
+          <h2>back</h2>
+        </BackIconDiv>
+      </div>
+      <div className="img-about-detail">
+        <img src={aboutus} alt="Kantor" className="img-about2" width="600" />
+      </div>
+    </div>
+  );
+};
 
-export default AboutdetailComp
+export default AboutdetailComp;

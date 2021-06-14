@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+}
+.judul-aboutdet{
+    top: 83px;
+    position: fixed;
+}
+
+.judul-aboutdet h1{
+    font-size: 60px;
+    color: #FFCC33;
+    font-weight: 700;
+    font-family: 'Viga', sans-serif;
+}
+
+.judul-aboutdet h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+}
+
+.img-about-detail {
+    /* position: fixed; */
+    margin-top: 150px;
+    text-align: center;
+
+}
