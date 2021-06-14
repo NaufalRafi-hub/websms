@@ -24,7 +24,7 @@ const AboutusComp = () => {
                     <div className="line-about" >
                     </div>
                     <div className="div-btn">
-                        <Button className="btn-about" variant="dark">See Detail</Button>
+                        <Button href="/aboutus" className="btn-about" variant="dark">See Detail</Button>
                     </div>
                 </div>  
             </Row>
