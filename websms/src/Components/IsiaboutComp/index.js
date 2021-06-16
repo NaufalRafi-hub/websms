@@ -1,5 +1,19 @@
 import React, { useEffect } from "react";
-import { Bgwrapper, Txtwrapper, Headline, Subhead,Desc } from "./IsiaboutComp";
+import {
+  Bgwrapper,
+  Txtwrapper,
+  Headline,
+  Subhead,
+  Desc,
+  ExpDiv,
+  ColExpFolder,
+  ColExpClient,
+  ColExpClock,
+  FolderIcon,
+  ClientIcon,
+  ClockIcon,
+  Desc2,
+} from "./IsiaboutComp";
 import { useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -11,9 +25,9 @@ const IsiaboutComp = () => {
     if (inView) {
       controls.start("visible");
     }
-    if (!inView) {
-      controls.start("hidden");
-    }
+    // if (!inView) {
+    //   controls.start("hidden");
+    // }
   }, [controls, inView]);
 
   const aboutVariants = {
@@ -24,68 +38,58 @@ const IsiaboutComp = () => {
     visible: {
       opacity: 1,
       x: 0,
-      // transition: {
-      //   duration: 1,
-      // },
     },
   };
   return (
     <>
-      <div className="fluid">
-        <Bgwrapper>
-          <Headline>Why Us?</Headline>
-          <Txtwrapper>
-            <Subhead
-              ref={ref}
-              initial="hidden"
-              animate={controls}
-              variants={aboutVariants}
-              transition={{ duration: 0.7 }}
-            >
-              Vision
-            </Subhead>
-            <Desc
-              ref={ref}
-              initial="hidden"
-              animate={controls}
-              variants={aboutVariants}
-              transition={{ duration: 1 }}
-            >
-              Layanan<b> integrated marketing communications</b> yang prima dengan konsep layanan <b>one stop service </b>dalam satu atap.
-            </Desc>
-            <Subhead
-              ref={ref}
-              initial="hidden"
-              animate={controls}
-              variants={aboutVariants}
-              transition={{ duration: 0.7 }}
-            >
-              How We Work?
-            </Subhead>
-            <Desc
-              ref={ref}
-              initial="hidden"
-              animate={controls}
-              variants={aboutVariants}
-              transition={{ duration: 1 }}
-            >
-              Membantu produsen / brand dalam setiap program marketing communication <br />
-              <br />Memberikan nilai lebih dalam setiap layanan <br />
-              <br />Menjadi solusi terbaik bagi produsen/brand dalam memenuhi semua kebutuhan program marketing communication-nya <br/>
-              <br />Menjadi partner profesional terpercaya dengan mengedepankan layanan yang prima dan kepuasan pelanggan
-            </Desc>
-            <Subhead
-              ref={ref}
-              initial="hidden"
-              animate={controls}
-              variants={aboutVariants}
-              transition={{ duration: 0.7 }}
-            >
-              Experiences
-            </Subhead>
-          </Txtwrapper>
-        </Bgwrapper>
-      </div>
+      <Bgwrapper
+        ref={ref}
+        initial="hidden"
+        animate={controls}
+        variants={aboutVariants}
+        transition={{ duration: 0.7 }}
+      >
+        <Headline>Why Us?</Headline>
+        <Txtwrapper>
+          <Subhead whileHover={{ scale: 1.1 }}>Vision</Subhead>
+          <Desc>
+            Layanan<b> integrated marketing communications</b> yang prima dengan
+            konsep layanan <b>one stop service </b>dalam satu atap.
+          </Desc>
+          <Subhead>How We Work?</Subhead>
+          <Desc>
+            <b>Membantu</b> produsen / brand dalam{" "}
+            <b>setiap program marketing communication</b> <br />
+            <br />
+            <b>Memberikan nilai lebih</b> dalam setiap layanan <br />
+            <br />
+            Menjadi <b>solusi terbaik</b> bagi produsen/brand dalam{" "}
+            <b>memenuhi semua kebutuhan</b> program marketing communication-nya{" "}
+            <br />
+            <br />
+            Menjadi <b>partner profesional</b> terpercaya dengan mengedepankan{" "}
+            <b>layanan yang prima</b> dan <b>kepuasan pelanggan</b>
+          </Desc>
+        </Txtwrapper>
+        <Subhead>Experiences</Subhead>
+        <ExpDiv>
+          <ColExpFolder>
+            <FolderIcon />
+            <Subhead>1000+</Subhead>
+            <Desc2>Projects</Desc2>
+          </ColExpFolder>
+          <ColExpClient>
+            <ClientIcon />
+            <Subhead>500+</Subhead>
+            <Desc2>Clients</Desc2>
+          </ColExpClient>
+          <ColExpClock>
+            <ClockIcon />
+            <Subhead>1000+ Hours</Subhead>
+            <Desc2>Work Times</Desc2>
+          </ColExpClock>
+        </ExpDiv>
+      </Bgwrapper>
     </>
   );
 };

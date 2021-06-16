@@ -3,6 +3,7 @@ import HeadlineAbtComp from "../Components/HeadlineAbtComp";
 import IsiaboutComp from "../Components/IsiaboutComp";
 import HeroAboutComp from "../Components/HeroAboutComp";
 import { secOne, secThree } from "../Components/HeroAboutComp/Data";
+import OurOfficeAbtComp from "../Components/OurOfficeAbtComp";
 
 const aboutus = () => {
   return (
@@ -12,6 +13,7 @@ const aboutus = () => {
       {/* <HeroAbout2Comp /> */}
       <HeroAboutComp {...secThree} />
       <IsiaboutComp />
+      <OurOfficeAbtComp />
     </>
   );
 };
