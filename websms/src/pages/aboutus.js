@@ -4,6 +4,7 @@ import IsiaboutComp from "../Components/IsiaboutComp";
 import HeroAboutComp from "../Components/HeroAboutComp";
 import { secOne, secThree } from "../Components/HeroAboutComp/Data";
 import OurOfficeAbtComp from "../Components/OurOfficeAbtComp";
+import FooterComp from "../Components/FooterComp";
 
 const aboutus = () => {
   return (
@@ -14,6 +15,7 @@ const aboutus = () => {
       <HeroAboutComp {...secThree} />
       <IsiaboutComp />
       <OurOfficeAbtComp />
+      <FooterComp />
     </>
   );
 };
