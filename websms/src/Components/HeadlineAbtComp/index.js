@@ -3,9 +3,9 @@ import "./AboutdetailComp.css";
 import aboutus from "../../images/aboutus.png"
 import { BackIcon, BackIconDiv } from "./AboutdetailComp";
 
-const AboutdetailComp = () => {
+const HeadlineAbtComp = () => {
   return (
-    <div className="container">
+    <div className="container-fluid">
       <div className="judul-aboutdet">
         <h1>About Us</h1>
         <BackIconDiv>
@@ -20,4 +20,4 @@ const AboutdetailComp = () => {
   );
 };
 
-export default AboutdetailComp;
+export default HeadlineAbtComp;
