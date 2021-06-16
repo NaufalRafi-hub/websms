@@ -24,17 +24,11 @@ const aboutus = () => {
                     <SidebarComp  isOpen={isOpen} toggle={toggle}/>
                   
             </Router> */}
-      <Navbar />
       <AboutdetailComp />
-      <div className="who">
         <IsiaboutComp {...sectionOne} />
-      </div>
-      <div className="expert">
         <IsiaboutComp {...sectionTwo} />
-      </div>
-      <div className="focus">
         <IsiaboutComp {...sectionThree} />
-      </div>
+     
     </>
   );
 };

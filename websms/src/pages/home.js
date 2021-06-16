@@ -21,22 +21,21 @@ class FullpageWrapper extends React.Component {
     console.log("After load: " + destination.index);
   }
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      isOpen: false
-    };
-  }
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     isOpen: false
+  //   };
+  // }
   render() {
 
     return (
       <>
-            <Router>
+            {/* <Router>
                     <Navbar toggle = {() => this.setState({isOpen: true})}/>
                     <SidebarComp isOpen={this.state.isOpen} toggle = {() => this.setState({isOpen: false})}/>
-                    {/* <Route path="/aboutus" component={SigninPage} exact/> */}
                   
-            </Router>
+            </Router> */}
 
         <ReactFullpage
           navigation={true}
