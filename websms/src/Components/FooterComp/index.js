@@ -1,40 +1,53 @@
-import React from 'react'
-import { Bgwrapper, Logo, ContactDiv, EmailIcon, LogoDiv, Nav, NavDiv, WAIcon, BottomDiv, Copyright, BlockWrapper } from './FooterElements'
+import React from "react";
+import {
+  Bgwrapper,
+  Logo,
+  ContactDiv,
+  EmailIcon,
+  LogoDiv,
+  Nav,
+  NavDiv,
+  WAIcon,
+  BottomDiv,
+  Copyright,
+  BlockWrapper,
+  CopyIcon,
+  BottomWrapper,
+  LineBottom,
+} from "./FooterElements";
 
 const FooterComp = () => {
-    return (
-        <div className="fluid">
-            <Bgwrapper>
-                <BlockWrapper>
-                <LogoDiv>
-                    <Logo>SMS</Logo>
-                </LogoDiv>
-                {/* </BlockWrapper>
-                <BlockWrapper> */}
-                <NavDiv>
-                    <Nav>Home</Nav>
-                    <Nav>About Us</Nav>
-                    <Nav>Services</Nav>
-                    <Nav>Our Work</Nav>
-                    <Nav>Track Order</Nav>
-                    <Nav>Contact Us</Nav>
-                </NavDiv>
-                {/* </BlockWrapper>
-                <BlockWrapper> */}
-                <ContactDiv>
-                    <EmailIcon/>
-                    <WAIcon />
-                </ContactDiv>
-                {/* <BottomDiv>
-                    <Copyright>Copyright SMS Design 2021</Copyright>
-                </BottomDiv> */}
-                </BlockWrapper>
-                <BottomDiv>
-                    <Copyright>Copyright SMS Design</Copyright>
-                </BottomDiv>
-            </Bgwrapper>
-        </div>
-    )
-}
+  return (
+    <div className="fluid">
+      <Bgwrapper>
+        <BlockWrapper>
+          <LogoDiv>
+            <Logo>SMS</Logo>
+          </LogoDiv>
+          <NavDiv>
+            <Nav>Home</Nav>
+            <Nav>About Us</Nav>
+            <Nav>Services</Nav>
+            <Nav>Our Work</Nav>
+            <Nav>Track Order</Nav>
+            <Nav>Contact Us</Nav>
+          </NavDiv>
 
-export default FooterComp
+          <ContactDiv>
+            <EmailIcon />
+            <WAIcon />
+          </ContactDiv>
+        </BlockWrapper>
+        <BottomDiv>
+            <BottomWrapper>
+                <LineBottom></LineBottom>
+                <CopyIcon />
+                <Copyright>Copyright SMS Design 2021</Copyright>
+            </BottomWrapper>
+        </BottomDiv>
+      </Bgwrapper>
+    </div>
+  );
+};
+
+export default FooterComp;

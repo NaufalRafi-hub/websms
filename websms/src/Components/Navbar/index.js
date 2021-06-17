@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Row, Col } from "react-bootstrap";
 import { NavLink as Link } from "react-router-dom";
 import { BsList } from "react-icons/bs";
+
 export const Nav = styled.nav`
     background: transparent;
     height: 80px;
