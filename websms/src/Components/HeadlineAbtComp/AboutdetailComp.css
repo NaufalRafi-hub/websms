@@ -4,19 +4,26 @@
 .judul-aboutdet{
     top: 83px;
     left: 10%;
-    position: fixed;
+    position: absolute;
+    display: inline-block;
+}
+.judul-aboutdetIcon{
+    top: 88px;
+    right: 15%;
+    position: absolute;
+    display: inline-block;
 }
 
 .judul-aboutdet h1{
-    font-size: 60px;
+    font-size: 70px;
     color: #FFCC33;
     font-weight: 700;
     font-family: 'Viga', sans-serif;
 }
 
-.judul-aboutdet h2 {
+.judul-aboutdetIcon h2 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 28px;
+    font-size: 30px;
     color: #24275c;
 }
 

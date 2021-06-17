@@ -8,6 +8,8 @@ const HeadlineAbtComp = () => {
     <div className="container-fluid">
       <div className="judul-aboutdet">
         <h1>About Us</h1>
+      </div>
+      <div className="judul-aboutdetIcon">
         <BackIconDiv>
           <BackIcon />
           <h2>back</h2>
