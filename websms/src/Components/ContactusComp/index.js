@@ -41,7 +41,7 @@ const ContactusComp = () => {
           </Row>
         </div>
       </div>
-      <div className='map'>
+      {/* <div className='map'>
         <MapContainer
           center={[-6.305261349820201, 106.71880508213948]}
           zoom={16}
@@ -57,7 +57,7 @@ const ContactusComp = () => {
             </Popup>
           </Marker>
         </MapContainer>
-      </div>
+      </div> */}
     </div>
   );
 };
