@@ -29,7 +29,7 @@
   }
 
   .leaflet-container{
-    position: static;
+    position: relative;
     height: 40vh;
     width: 40vw;
   }
@@ -62,7 +62,7 @@
   
   @media screen and (min-width:1024px) {
     .leaflet-container{
-      position: static;
+      position: relative;
       height: 50vh;
       width: 50vw;
     }
