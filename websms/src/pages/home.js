@@ -9,6 +9,7 @@ import AboutusComp from '../Components/AboutusComp';
 import ServicesComp from '../Components/ServicesComp';
 import TrackorderComp from '../Components/TrackorderComp';
 import ContactusComp from '../Components/ContactusComp';
+import OurWorkComp from '../Components/OurWorkComp';
 import {
   MapContainer,
   LayersControl,
@@ -49,7 +50,8 @@ class FullpageWrapper extends React.Component {
                     <ServicesComp />
                   </div>
                   <div className='container section' data-anchor='page4'>
-                    <h3>Our Work</h3>
+                    {/* <h3>Our Work</h3> */}
+                    <OurWorkComp />
                   </div>
                   <div className='container section' data-anchor='page5'>
                     <TrackorderComp />

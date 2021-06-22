@@ -1,0 +1,58 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 5fr ;
+  grid-template-areas: "title title"
+                       "aside carousel";
+}
+
+.title {
+  grid-area: title;
+  text-align: center;
+}
+
+.title > h1 {
+  font-weight: 400;
+  font-size: 90px;
+  color:#FFCC33;
+  font-family: 'Viga', sans-serif;
+}
+
+.aside {
+  grid-area: aside;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.aside > .option {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+  font-size: 28px;
+  line-height: 32px;
+  color: #24275C;
+}
+
+.option > li {
+  display: flex;
+  cursor: pointer;
+}
+
+.option > li > hr {
+  border: 1px solid #24275C;
+  padding-left: 64.31px;
+  margin-right: 15.37px;
+  opacity: 0;
+}
+
+.strip {
+  opacity: 100 !important;
+}
+
+
+.carousel {
+  grid-area: carousel;
+}
