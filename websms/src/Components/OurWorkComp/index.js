@@ -2,8 +2,6 @@ import React from 'react';
 import { useState } from 'react';
 import { Carousel, Card, Button } from 'react-bootstrap';
 import './OurWorkComp.css';
-// import image1 from '../../images/latest.png';
-// import image2 from '../../images/pexels-edgar-moran-5599746.png';
 import Slider from '../Carousel/Slider';
 
 const OurWorkComp = () => {
