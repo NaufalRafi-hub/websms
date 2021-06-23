@@ -13,7 +13,8 @@ export default [
   },
   {
     title: 'Second Slider Image',
-    description: 'This is the Second image',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra pretium vel mattis posuere nulla venenatis rhoncus nec scelerisque.',
     urls: First,
     logo: logo2,
   },
