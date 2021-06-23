@@ -56,3 +56,13 @@
 .carousel {
   grid-area: carousel;
 }
+
+.next-icon {
+  background-image: url('../../images/next.svg');
+
+}
+
+.prev-icon {
+  background-image: url('../../images/prev.svg');
+
+}

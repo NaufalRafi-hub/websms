@@ -1,7 +1,10 @@
 import React from 'react';
 import { useState } from 'react';
-import { Carousel } from 'react-bootstrap';
+import { Carousel, Card, Button } from 'react-bootstrap';
 import './OurWorkComp.css';
+// import image1 from '../../images/latest.png';
+// import image2 from '../../images/pexels-edgar-moran-5599746.png';
+import Slider from '../Carousel/Slider';
 
 const OurWorkComp = () => {
   const [optKey, setOptKey] = useState(1);
@@ -49,7 +52,7 @@ const OurWorkComp = () => {
         <div></div>
       </div>
       <div className='carousel'>
-        <h3>gambar</h3>
+        <Slider />
       </div>
     </div>
   );
