@@ -3,28 +3,40 @@ import { useState } from 'react';
 import { Carousel, Card, Button } from 'react-bootstrap';
 import './OurWorkComp.css';
 import Slider from '../Carousel/Slider';
+import imageSlider from '../Carousel/imageSlider';
+
+const contentDefault = () => {
+  return imageSlider.filter((item) => item.option === 'display')[0].data;
+};
 
 const OurWorkComp = () => {
-  const [optKey, setOptKey] = useState(1);
+  const [optKey, setOptKey] = useState('display');
+  const [content, setContent] = useState(contentDefault());
+
+  const changeSelect = (opt) => {
+    return imageSlider.filter((item) => item.option === opt)[0].data;
+  };
 
   const option = [
     {
-      option: 'Display',
+      option: 'display',
       key: 1,
     },
     {
-      option: 'Sign',
+      option: 'sign',
       key: 2,
     },
     {
-      option: 'Booth',
+      option: 'booth',
       key: 3,
     },
     {
-      option: 'Branding',
+      option: 'branding',
       key: 4,
     },
   ];
+
+  // console.log(content);
 
   return (
     <div className='wrapper'>
@@ -39,18 +51,36 @@ const OurWorkComp = () => {
               <li
                 key={item.key}
                 onClick={() => {
-                  setOptKey(item.key);
+                  setOptKey(item.option);
+                  setContent(changeSelect(optKey));
                 }}>
-                <hr className={optKey === item.key ? 'strip' : ''} />
+                <hr className={optKey === item.option ? 'strip' : ''} />
                 {item.option}
               </li>
             </>
           ))}
         </ul>
-        <div></div>
+        <div className='mobile'>
+          <select
+            name='option'
+            id='option'
+            onChange={(e) => {
+              setOptKey(e.target.value);
+              setContent(changeSelect(optKey));
+            }}
+            className='select'>
+            {option.map((item) => (
+              <>
+                <option value={item.option} key={item.key}>
+                  {item.option}
+                </option>
+              </>
+            ))}
+          </select>
+        </div>
       </div>
       <div className='carousel'>
-        <Slider />
+        <Slider imageSlider={content} />
       </div>
     </div>
   );

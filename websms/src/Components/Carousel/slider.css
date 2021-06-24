@@ -98,6 +98,7 @@
   border-radius: 30px;
   text-decoration: none;
   color: white;
+  height: 100%;
 }
 
 .detail-button > hr {
@@ -158,4 +159,83 @@
 .active-dot,
 .dot:hover {
   background-color: #24275C;
+}
+
+@media screen  and (max-width: 1200px){
+  .slide-image{
+    height: 50%;
+  }
+
+  .detail-button > hr {
+    padding-left: 303px;
+  }
+
+  .detail-button > a {
+    padding: 15px 30px;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .detail-wrap{
+    grid-template-rows: 1.5fr 2fr 1fr;
+  }
+
+  .detail-button > hr {
+    padding-left: 203px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .detail-wrap{
+    grid-template-areas: "title title"
+                       "description description"
+                       "button-detail button-detail";
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .slide-title{
+    font-size: 24px;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .slide-text {
+    padding-left: 0;
+    line-height: 2rem;
+  }
+
+  .detail-button{
+    margin-left: 0;
+  }
+
+  .detail-button > hr {
+    padding-left: 343px;
+  }
+
+  /* .slide-image {
+    height: 40%;
+  } */
+}
+
+@media screen and (max-width: 540px) {
+  .detail-button > hr {
+    padding-left: 203px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .detail-button > hr {
+    padding-left: 103px;
+  }
+}
+
+@media screen and (max-width: 368px){
+  .detail-wrap{
+    grid-template-rows: 1.5fr 2fr 0fr;
+  }
 }
