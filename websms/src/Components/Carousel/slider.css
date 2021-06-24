@@ -196,6 +196,10 @@
     font-size: 24px;
     text-align: center;
     padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
   }
 
   .slide-text {
@@ -224,7 +228,7 @@
 
 @media screen and (max-width: 400px) {
   .detail-button > hr {
-    padding-left: 103px;
+    padding-left: 193px;
   }
 }
 

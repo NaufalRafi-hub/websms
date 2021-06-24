@@ -127,6 +127,7 @@
     grid-template-areas: "title title"
                          "aside aside"
                          "carousel carousel";
+    margin-top: 20px;
   }
 
   .aside > .option {
