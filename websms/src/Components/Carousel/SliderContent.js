@@ -14,10 +14,10 @@ const SliderContent = ({ activeIndex, imageSlider }) => {
             <div className='logo'>
               <img src={slide.logo} alt='' className='logo' />
             </div>
-            <div className='detail-button'>
-              <a href=''>See Detail</a>
-              <hr />
-            </div>
+          </div>
+          <div className='detail-button'>
+            <a href=''>See Detail</a>
+            <hr />
           </div>
         </div>
       ))}

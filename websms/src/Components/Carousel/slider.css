@@ -42,10 +42,9 @@
 .detail-wrap {
   display: grid;
   grid-template-columns: 2fr 1.5fr;
-  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 2fr;
   grid-template-areas: "title logo"
-                       "description logo"
-                       "button-detail button-detail";
+                       "description logo";
   gap: 10px;
   margin-top: 20px;
 }
@@ -94,7 +93,7 @@
 
 .detail-button > a {
   background-color: #24275C;
-  padding: 15px 55px;
+  padding: 8px 23px;
   border-radius: 30px;
   text-decoration: none;
   color: white;
@@ -170,15 +169,11 @@
     padding-left: 303px;
   }
 
-  .detail-button > a {
-    padding: 15px 30px;
-    display: inline-block;
-  }
 }
 
 @media screen and (max-width: 992px) {
   .detail-wrap{
-    grid-template-rows: 1.5fr 2fr 1fr;
+    grid-template-rows: 1.5fr 2fr;
   }
 
   .detail-button > hr {
@@ -190,8 +185,7 @@
 @media screen and (max-width: 768px) {
   .detail-wrap{
     grid-template-areas: "title title"
-                       "description description"
-                       "button-detail button-detail";
+                       "description description";
   }
 
   .logo {
@@ -236,6 +230,6 @@
 
 @media screen and (max-width: 368px){
   .detail-wrap{
-    grid-template-rows: 1.5fr 2fr 0fr;
+    grid-template-rows: 1.5fr 2fr;
   }
 }
