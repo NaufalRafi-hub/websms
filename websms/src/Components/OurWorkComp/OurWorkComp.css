@@ -1,0 +1,157 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 0.5fr 5fr ;
+  grid-template-areas: "title title"
+                       "aside carousel";
+}
+
+.title {
+  grid-area: title;
+  text-align: center;
+}
+
+.title > h1 {
+  font-weight: 400;
+  font-size: 90px;
+  color:#FFCC33;
+  font-family: 'Viga', sans-serif;
+}
+
+.aside {
+  grid-area: aside;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.aside > .option {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+  font-size: 28px;
+  line-height: 32px;
+  color: #24275C;
+  text-transform: capitalize;
+  /* display: none; */
+}
+
+.option > li {
+  display: flex;
+  cursor: pointer;
+}
+
+.option > li > hr {
+  border: 1px solid #24275C;
+  padding-left: 64.31px;
+  margin-right: 15.37px;
+  opacity: 0;
+}
+
+.strip {
+  opacity: 100 !important;
+}
+
+.mobile {
+  display: none;
+}
+
+.carousel {
+  grid-area: carousel;
+}
+
+.next-icon {
+  background-image: url('../../images/next.svg');
+
+}
+
+.prev-icon {
+  background-image: url('../../images/prev.svg');
+
+}
+
+.select {
+  display: flex;
+  color: #24275C;
+  background-color: #EFEFEF;
+  height: 35px;
+  border: none;
+  width: 300px;
+  text-transform: capitalize;
+  padding: 0 20px;
+
+  margin: 0;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-image:
+    linear-gradient(45deg, transparent 50%, #24275C 50%),
+    linear-gradient(135deg, #24275C 50%, transparent 50%),
+    linear-gradient(to right, #24275C, #24275C);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+}
+
+.select:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 992px) {
+  .option > li > hr {
+  padding-left: 50.31px;
+  }
+
+  .aside > .option {
+  font-size: 24px;
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 0fr 0fr 6fr ;
+    grid-template-areas: "title title"
+                         "aside aside"
+                         "carousel carousel";
+    margin-top: 20px;
+  }
+
+  .aside > .option {
+    display: none;
+  }
+
+  .title > h1 {
+    font-size: 80px;
+  }
+
+  .mobile {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 368px){
+  .title > h1 {
+    font-size: 64px;
+  }
+}
+
+@media screen and (max-height: 870px) {
+  .title > h1 {
+    font-size: 48px;
+  }
+}
