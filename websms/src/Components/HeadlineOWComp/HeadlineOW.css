@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+}
+.judul-OW{
+    top: 83px;
+    left: 10%;
+    position: absolute;
+    display: inline-block;
+}
+.OWIcon{
+    top: 77px;
+    right: 20%;
+    position: absolute;
+    display: inline-block;
+}
+
+.judul-OW h1{
+    font-size: 50px;
+    color: #FFCC33;
+    font-weight: 700;
+    font-family: 'Viga', sans-serif;
+}
+
+.OWIcon h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    color: #24275c;
+}

@@ -9,7 +9,7 @@ import AboutusComp from '../Components/AboutusComp';
 import ServicesComp from '../Components/ServicesComp';
 import TrackorderComp from '../Components/TrackorderComp';
 import ContactusComp from '../Components/ContactusComp';
-import OurWorkComp from '../Components/OurWorkComp';
+import OurWorkComp from '../Components/OurworkComp';
 import {
   MapContainer,
   LayersControl,

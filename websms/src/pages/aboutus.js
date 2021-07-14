@@ -5,13 +5,14 @@ import HeroAboutComp from "../Components/HeroAboutComp";
 import { secOne, secThree } from "../Components/HeroAboutComp/Data";
 import OurOfficeAbtComp from "../Components/OurOfficeAbtComp";
 import FooterComp from "../Components/FooterComp";
+import HeroExpertiseComp from "../Components/HeroExpertiseComp";
 
 const aboutus = () => {
   return (
     <>
       <HeadlineAbtComp />
       <HeroAboutComp {...secOne} />
-      {/* <HeroAbout2Comp /> */}
+      <HeroExpertiseComp />
       <HeroAboutComp {...secThree} />
       <IsiaboutComp />
       <OurOfficeAbtComp />

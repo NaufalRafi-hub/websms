@@ -1,10 +1,15 @@
-import React, { useEffect } from "react";
-import { Headline, Subhead } from "./HeroAboutElements";
-import "./HeroAboutElements.css";
+import React, {useEffect} from "react";
+import {
+  Headline,
+  Judulexp,
+  Subexp,
+  Subhead,
+  Wrapperexp,
+} from "./HeroExpertiseElements";
 import { useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-const HeroAboutComp = ({ headline, description }) => {
+const HeroExpertiseComp = () => {
   const controls = useAnimation();
   const { ref, inView } = useInView();
 
@@ -17,47 +22,47 @@ const HeroAboutComp = ({ headline, description }) => {
     // }
   }, [controls, inView]);
 
-  const abtheadVariants = {
+  const expVariants = {
     hidden: {
       opacity: 0,
       x: -100,
     },
     visible: {
       opacity: 1,
-      x: 0,
-      // transition: {
-      //   duration: 1,
-      // },
+      x: 0
     },
   };
   return (
     <div className="container">
-      <div className="wrapper-hero-abt">
-        <div className="judul-hero-abt">
+      <Wrapperexp>
+        <Judulexp>
           <Headline
             ref={ref}
             initial="hidden"
             animate={controls}
-            variants={abtheadVariants}
+            variants={expVariants}
             transition={{ duration: 0.7 }}
           >
-            {headline}
+            Our Expertise
           </Headline>
-        </div>
-        <div className="sub-hero-abt">
+        </Judulexp>
+        <Subexp>
           <Subhead
             ref={ref}
             initial="hidden"
             animate={controls}
-            variants={abtheadVariants}
+            variants={expVariants}
             transition={{ duration: 1 }}
           >
-            {description}
+            Divisi offset, dan screen printing (percetakan dan sablon), <br />
+            Divisi digital flash (percetakan digital), <br />
+            Divisi trading (visualisasi produk keras), <br />
+            Divisi outdoor production (produksi luarruang).
           </Subhead>
-        </div>
-      </div>
+        </Subexp>
+      </Wrapperexp>
     </div>
   );
 };
 
-export default HeroAboutComp;
+export default HeroExpertiseComp;
