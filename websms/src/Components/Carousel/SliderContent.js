@@ -1,8 +1,10 @@
 import React from 'react';
 
+//buat passing data dari imageSlider ditaroh di dalem bracket
 const SliderContent = ({ activeIndex, imageSlider }) => {
   return (
     <section>
+      {/* ini untuk ngambil object array dan looping untuk tiap indexnya diliat */}
       {imageSlider.map((slide, index) => (
         <div
           key={index}

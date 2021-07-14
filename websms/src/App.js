@@ -11,6 +11,7 @@ import SidebarComp from "./Components/SidebarComp";
 function App() {
   const [isOpen, setIsOpen] = useState(false);
 
+  //function to set isOpen to true when toggle is clicked
   const toggle = () => {
     setIsOpen(!isOpen);
   };
