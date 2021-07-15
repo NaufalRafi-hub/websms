@@ -9,7 +9,7 @@ const contentDefault = () => {
   return imageSlider.filter((item) => item.option === 'display')[0].data;
 };
 
-const OurWorkComp = () => {
+const OurworkComp = () => {
   const [optKey, setOptKey] = useState('display');
   const [content, setContent] = useState(contentDefault());
 
@@ -86,4 +86,4 @@ const OurWorkComp = () => {
   );
 };
 
-export default OurWorkComp;
+export default OurworkComp;
