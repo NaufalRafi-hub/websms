@@ -1,21 +1,25 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Carousel, Card, Button } from 'react-bootstrap';
 import './OurWorkComp.css';
 import Slider from '../Carousel/Slider';
 import imageSlider from '../Carousel/imageSlider';
 
-const contentDefault = () => {
-  return imageSlider.filter((item) => item.option === 'display')[0].data;
-};
+// const contentDefault = () => {
+//   return imageSlider.filter((item) => item.option === 'display')[0].data;
+// };
 
 const OurWorkComp = () => {
   const [optKey, setOptKey] = useState('display');
-  const [content, setContent] = useState(contentDefault());
+  const [content, setContent] = useState([]);
 
-  const changeSelect = (opt) => {
-    return imageSlider.filter((item) => item.option === opt)[0].data;
-  };
+  useEffect (() => {
+    const defaultContent = imageSlider.filter((item) => item.option === optKey)[0].data;
+    setContent(defaultContent);
+  },[optKey])
+  // const changeSelect = (opt) => {
+  //   return imageSlider.filter((item) => item.option === opt)[0].data;
+  // };
 
   const option = [
     {
@@ -52,7 +56,6 @@ const OurWorkComp = () => {
                 key={item.key}
                 onClick={() => {
                   setOptKey(item.option);
-                  setContent(changeSelect(optKey));
                 }}>
                 <hr className={optKey === item.option ? 'strip' : ''} />
                 {item.option}
@@ -66,7 +69,6 @@ const OurWorkComp = () => {
             id='option'
             onChange={(e) => {
               setOptKey(e.target.value);
-              setContent(changeSelect(optKey));
             }}
             className='select'>
             {option.map((item) => (

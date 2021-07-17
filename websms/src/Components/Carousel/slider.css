@@ -125,9 +125,9 @@
 
 .prev:hover,
 .next:hover {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.6);
-  transition: all 0.5s ease-in;
+  color: #FFCC33;
+  /* background-color: rgba(0, 0, 0, 0.6); */
+  transition: all 0.2s ease-in;
 }
 
 .next {
@@ -187,7 +187,11 @@
   .detail-wrap{
     grid-template-areas: "title title"
                        "description description";
+    width: min(100%, 27em);
+    margin: 0 auto;
+    
   }
+
 
   .logo {
     display: none;
@@ -209,11 +213,13 @@
   }
 
   .detail-button{
-    margin-left: 0;
+    width: min(100%, 27em);
+    margin: 0 auto;
   }
 
   .detail-button > hr {
-    padding-left: 343px;
+    padding-left: 290px;
+    
   }
 
   /* .slide-image {
@@ -221,20 +227,31 @@
   } */
 }
 
-@media screen and (max-width: 540px) {
+/* @media screen and (max-width: 540px) {
   .detail-button > hr {
-    padding-left: 203px;
+    padding-left: 280px;
   }
-}
+} */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 453px) {
   .detail-button > hr {
-    padding-left: 193px;
+    padding-left: 55%;
+  }
+  .detail-button{
+    width: min(100%, 27em);
+    margin: 0 auto;
   }
 }
 
 @media screen and (max-width: 368px){
   .detail-wrap{
     grid-template-rows: 1.5fr 2fr;
+  }
+  /* .detail-button{
+    width: min(100%, 20em);
+    margin: 0 auto;
+  } */
+  .detail-button > hr {
+    padding-left: 55%;
   }
 }
