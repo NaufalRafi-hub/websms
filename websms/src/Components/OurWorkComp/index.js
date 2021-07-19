@@ -35,7 +35,7 @@ const OurWorkComp = () => {
       key: 3,
     },
     {
-      option: 'branding',
+      option: 'Installation',
       key: 4,
     },
   ];
