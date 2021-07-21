@@ -14,6 +14,7 @@ export default [
     //atau bikin lagi object array di dalem object array
     data: [
       {
+        id : 1,
         title: 'PT. Multi Bintang Indonesia',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra pretium vel mattis posuere nulla venenatis rhoncus nec scelerisque. ',
@@ -45,6 +46,7 @@ export default [
         ]
       },
       {
+        id : 2,
         title: 'PT. Dutch Mill Indonesia*',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra pretium vel mattis posuere nulla venenatis rhoncus nec scelerisque.',
@@ -59,6 +61,7 @@ export default [
         ]
       },
       {
+        id : 3,
         title: 'PT. Karyadibya Mahardhika (JTI)*',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra pretium vel mattis posuere nulla venenatis rhoncus nec scelerisque.',
@@ -73,6 +76,7 @@ export default [
         ]
       },
       {
+        id : 4,
         title: 'PT. Mevius Indonesia*',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra pretium vel mattis posuere nulla venenatis rhoncus nec scelerisque.',
@@ -87,6 +91,7 @@ export default [
         ]
       },
       {
+        id : 5,
         title: 'PT. Nutricia Indonesia Sejahtera*',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra pretium vel mattis posuere nulla venenatis rhoncus nec scelerisque.',
@@ -101,6 +106,7 @@ export default [
         ]
       },
       {
+        id : 6,
         title: 'PT. Sarihusada Generasi Mahardhika*',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra pretium vel mattis posuere nulla venenatis rhoncus nec scelerisque.',
