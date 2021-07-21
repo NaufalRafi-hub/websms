@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, BrowserRouter } from 'react-router-dom';
 
 //buat passing data dari imageSlider ditaroh di dalem bracket
 const SliderContent = ({ activeIndex, imageSlider }) => {
@@ -20,7 +21,7 @@ const SliderContent = ({ activeIndex, imageSlider }) => {
             </div>
           </div>
           <div className='detail-button'>
-            <a href=''>See Detail</a>
+              <Link to={`/product/${slide.title}`}>See Detail</Link>
             <hr />
           </div>
         </div>
