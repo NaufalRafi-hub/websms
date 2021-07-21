@@ -38,9 +38,12 @@
     font-size: 12px;
     border-radius: 20px;
     cursor: pointer;
+    text-decoration: none;
+    color: white;
 }
 .btn-about:hover {
-    background:#141970;
+    background:#FFCC33;
+    text-decoration: none;
 }
 .line-about{
     border-top: 2px solid #24275C;

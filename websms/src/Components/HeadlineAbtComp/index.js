@@ -2,6 +2,7 @@ import React from "react";
 import "./AboutdetailComp.css";
 import aboutus from "../../images/aboutus.png"
 import { BackIcon, BackIconDiv } from "./AboutdetailComp";
+import { Link } from "react-router-dom";
 
 const HeadlineAbtComp = () => {
   return (
@@ -12,7 +13,7 @@ const HeadlineAbtComp = () => {
       <div className="judul-aboutdetIcon">
         <BackIconDiv>
           <BackIcon />
-          <h2>back</h2>
+          <Link to="/" className="IconLink">back</Link>
         </BackIconDiv>
       </div>
       <div className="img-about-detail">
