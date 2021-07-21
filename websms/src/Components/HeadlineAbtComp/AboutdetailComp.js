@@ -3,6 +3,10 @@ import { MdKeyboardBackspace } from 'react-icons/md';
 
 export const BackIcon = styled(MdKeyboardBackspace)`
   color: #24275c;
+  // width: 500;
+  &:after {
+   width: 40px;
+  }
   `
 
 export const BackIconDiv = styled.div `
@@ -14,4 +18,8 @@ export const BackIconDiv = styled.div `
   cursor: pointer;
   outline: none;
   display: flex;
+  text-decoration: none;
+  &:after {
+    font-size: 30px;
+  }
 `

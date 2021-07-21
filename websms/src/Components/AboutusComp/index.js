@@ -3,6 +3,8 @@ import {Row, Col, Button} from "react-bootstrap"
 import "./AboutusComp.css"
 import aboutus from "../../images/aboutus.png"
 import line from "../../images/line-about.png"
+import { Link } from 'react-router-dom'
+
 
 const AboutusComp = () => {
     return (
@@ -24,7 +26,7 @@ const AboutusComp = () => {
                     <div className="line-about" >
                     </div>
                     <div className="div-btn">
-                        <Button href="/aboutus" className="btn-about" variant="dark">See Detail</Button>
+                        <Link to="/aboutus" className="btn-about" variant="dark">See Detail</Link>
                     </div>
                 </div>  
             </Row>
