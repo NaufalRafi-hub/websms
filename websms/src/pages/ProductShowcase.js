@@ -1,5 +1,5 @@
 import React from 'react'
-import ContentOW from '../Components/ContentOW/Data';
+import ContentOW from '../Components/ContentOW';
 import FooterComp from "../Components/FooterComp";
 import HeadlineOwComp from '../Components/HeadlineOWComp';
 

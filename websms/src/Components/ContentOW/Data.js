@@ -1,14 +1,14 @@
 import React, {useState, useEffect} from "react";
 
-const Data = (imageSlider) => {
+const Data = ({imageSlider}) => {
   
   return (
     <div className="container" style={{ display: 'block'}}>
         {imageSlider.map((data, index) => (
           <div key={index}>
-            <h1>{data.prod}</h1>
-            <h2>{data.name}</h2>
-            <h3>{data.desc}</h3>
+            <h1>{data.title}</h1>
+            {/* <h2>{data.name}</h2>
+            <h3>{data.desc}</h3> */}
           </div> 
         ))}
     </div>
