@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const WrapperOW = styled.div`
   display: block;
-  margin-top: 20%;
+  margin-top: 210px;
 `;
 export const WrapperFirstHeader = styled.div`
   top: 10%;
