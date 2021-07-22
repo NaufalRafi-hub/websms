@@ -1,18 +1,26 @@
 import styled from "styled-components";
 
+export const WrapperOW = styled.div`
+  display: block;
+  margin-top: 20%;
+`;
 export const WrapperFirstHeader = styled.div`
+  top: 10%;
   display: flex;
+  padding-bottom: 15%;
 `;
 export const DivHeadline = styled.div`
   position: absolute;
   left: 2%;
 `;
 export const DivDesc = styled.div`
-  position: absolute;
-  right: 2%;
+  display: block;
+  margin-top: 8%;
 `;
 export const WrapperContent = styled.div`
   display: grid;
+  padding-bottom: 5%;
+  width: min(45%, 27em);
 `;
 
 export const ImgWrapper = styled.div`
@@ -22,7 +30,7 @@ export const SecHeadline = styled.h2`
   font-family: "Viga", sans-serif;
   font-weight: bold;
   font-size: 20px;
-  color: #ffcc33;
+  color: #24275c;
 `;
 export const Headline = styled.h2`
   font-family: "Viga", sans-serif;

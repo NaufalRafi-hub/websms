@@ -1,28 +1,49 @@
 import React, { useState, useEffect } from "react";
 import imageSlider from "../Carousel/imageSlider";
 import { useParams } from "react-router-dom";
-import Data from "./Data.js";
+import {
+  SecHeadline,
+  Desc,
+  WrapperFirstHeader,
+  Headline,
+  WrapperContent,
+  DivDesc,
+  WrapperOW,
+} from "./ContentOWElements";
 
 const ContentOW = () => {
-  // const [content,setContent] = useState([])
-  console.log(imageSlider);
-  const { idPT, key, type} = new useParams();
-  // const { key } = new useParams();
+  const [content, setContent] = useState([]);
+  const { idPT, key, type } = new useParams();
 
   // useEffect(() => {
-  //   const defContent = imageSlider.data[key].filter((data) => data.title === {idPT});
+  //   const defContent = imageSlider.filter((data) => data.data === {idPT})[0].data;
   //   setContent(defContent);
   // },[])
+  console.log(content);
   return (
     <div className="container">
-      {/* <Data imageSlider={content} /> */}
-      {imageSlider[type].data[key].product.map((data, index) => (
-        <div key={index}>
-          <h1>{data.name}</h1>
-          <h2>{data.desc}</h2>
+      <WrapperOW>
+        {/* {imageSlider[type].data.map((item, key) => (
+        <div key={key}>
+          <h1>{item.title}</h1>
+          <h2>{item.description}</h2>
         </div>
-      ))}
-      {/* <h2>{idPT}</h2> */}
+      ))} */}
+        <WrapperFirstHeader>
+          <Headline>{idPT}</Headline>
+        </WrapperFirstHeader>
+
+        {imageSlider[type].data[key].product.map((data, index) => (
+          <WrapperContent key={index}>
+            <SecHeadline>
+              {data.prod} : {data.name}
+            </SecHeadline>
+            <DivDesc>
+              <Desc>{data.desc}</Desc>
+            </DivDesc>
+          </WrapperContent>
+        ))}
+      </WrapperOW>
     </div>
   );
 };

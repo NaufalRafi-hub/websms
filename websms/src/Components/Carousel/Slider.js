@@ -8,7 +8,6 @@ const Slider = ({imageSlider, parentIdx}) => {
   // console.log('parent ' + parentIdx)
   const len = imageSlider.length - 1;
   const [activeIndex, setActiveIndex] = useState(0);
-  // console.log('idx :' + activeIndex)
   // useEffect(() => {
   //   const interval = setInterval(() => {
   //     setActiveIndex(activeIndex === len ? 0 : activeIndex + 1);
@@ -19,7 +18,6 @@ const Slider = ({imageSlider, parentIdx}) => {
   //   setActiveIndex(0)
   //   Index = false;
   // }
-  // console.log(imageSlider);
   return (
     <div className='slider-container'>
       <SliderContent
@@ -42,7 +40,6 @@ const Slider = ({imageSlider, parentIdx}) => {
       />
     </div>
   );
-  // return <> </>;
 };
 
 export default Slider;

@@ -21,8 +21,15 @@
     font-family: 'Viga', sans-serif;
 }
 
-.OWIcon h2 {
+.link-prod {
     font-family: 'Open Sans', sans-serif;
     font-size: 30px;
+    font-weight: bold;
     color: #24275c;
+    text-decoration: none;
+}
+
+.link-prod:hover {
+    text-decoration: none;
+    color:#FFCC33;
 }
