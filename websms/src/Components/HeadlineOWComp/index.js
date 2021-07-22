@@ -1,6 +1,7 @@
 import React from "react";
 import "./HeadlineOW.css";
 import {BackIcon, BackIconDiv} from "./HeadlineOWElements"
+import { Link } from "react-router-dom";
 
 const HeadlineOwComp = () => {
   return (
@@ -11,7 +12,7 @@ const HeadlineOwComp = () => {
       <div className="OWIcon">
         <BackIconDiv>
           <BackIcon />
-          <h2>back</h2>
+          <Link to={"/"}className="link-prod">back</Link>
         </BackIconDiv>
       </div>
     </div>
