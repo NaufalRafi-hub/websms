@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 //buat passing data dari imageSlider ditaroh di dalem bracket
-const SliderContent = ({ activeIndex, imageSlider }) => {
+const SliderContent = ({activeIndex, imageSlider, parentIdx}) => {
+  console.log('parentSC' + parentIdx);
   return (
     <section>
       {/* ini untuk ngambil object array dan looping untuk tiap indexnya diliat */}
@@ -21,7 +22,7 @@ const SliderContent = ({ activeIndex, imageSlider }) => {
             </div>
           </div>
           <div className='detail-button'>
-              <Link to={`/product/${slide.title}/${slide.option}`}>See Detail</Link>
+              <Link to={`/product/${slide.title}/${index}/${parentIdx}`}>See Detail</Link>
             <hr />
           </div>
         </div>
