@@ -28,14 +28,15 @@
 
 .IconLink {
     font-family: 'Open Sans', sans-serif;
-    font-size: 27px;
+    font-size: 30px;
+    font-weight: bold;
     color: #24275c;
     text-decoration: none;
 }
 .IconLink:hover {
     text-decoration: none;
     /* color:#FFCC33; */
-    color: #24275c;
+    color:#FFCC33;
     /* font-size: 30px; */
 }
 
