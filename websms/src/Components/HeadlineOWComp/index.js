@@ -12,7 +12,7 @@ const HeadlineOwComp = () => {
       <div className="OWIcon">
         <BackIconDiv>
           <BackIcon />
-          <Link to={"/"}className="link-prod">back</Link>
+          <Link to={"/#4"}className="link-prod">back</Link>
         </BackIconDiv>
       </div>
     </div>
