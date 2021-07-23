@@ -11,36 +11,31 @@ import {
   WrapperOW,
   DivHeadline,
   DivHead,
+  LineBottom,
 } from "./ContentOWElements";
 
 const ContentOW = () => {
   const { idPT, key, type } = new useParams();
 
-  // useEffect(() => {
-  //   const defContent = imageSlider.filter((data) => data.data === {idPT})[0].data;
-  //   setContent(defContent);
-  // },[])
-  // console.log(content);
   return (
     <div className="container">
       <WrapperOW>
-        {/* {imageSlider[type].data.map((item, key) => (
-        <div key={key}>
-          <h1>{item.title}</h1>
-          <h2>{item.description}</h2>
-        </div>
-      ))} */}
-        <WrapperFirstHeader>
-          <DivHead>
-            <Headline>{idPT}</Headline>
-          </DivHead>
-          <DivHeadline>
-            <Desc>lorem ipsum dolor sit amet, consectetur adipis lorem ipsum dolor sit amet, consectetur adipis</Desc>
-          </DivHeadline>
-        </WrapperFirstHeader>
+        {imageSlider[type].data
+          .filter((data) => data.title === idPT)
+          .map((item, key) => (
+            <WrapperFirstHeader key={key}>
+              <DivHead>
+                <Headline>{item.title}</Headline>
+              </DivHead>
+              <DivHeadline>
+                <Desc>{item.description}</Desc>
+              </DivHeadline>
+            </WrapperFirstHeader>
+          ))}
 
         {imageSlider[type].data[key].product.map((data, index) => (
           <WrapperContent key={index}>
+            <LineBottom></LineBottom>
             <SecHeadline>
               {data.prod} : {data.name}
             </SecHeadline>

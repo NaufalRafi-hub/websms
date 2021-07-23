@@ -19,12 +19,19 @@ export const DivHeadline = styled.div`
 export const DivDesc = styled.div`
   display: block;
   margin-top: 8%;
+  grid-area: desc;
+  margin-left: 60px;
 `;
 export const WrapperContent = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 5%;
-  width: min(45%, 27em);
+  // display: flex;
+  // flex-direction: column;
+  display: grid;
+  grid-template-columns: auto 2fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:  "line head" 
+                        "desc desc";
+  padding-bottom: 80px;
+  width: min(50%, 27em);
   
 `;
 export const DivHead = styled.div`
@@ -36,10 +43,13 @@ export const ImgWrapper = styled.div`
 
 `
 export const SecHeadline = styled.h2`
+  grid-area: head;
   font-family: "Viga", sans-serif;
   font-weight: bold;
   font-size: 20px;
   color: #24275c;
+  margin-left: 10px;
+  align-items: center;
 `;
 export const Headline = styled.h2`
   grid-area: head;
@@ -53,4 +63,15 @@ export const Desc = styled.h3`
   text-justify: auto;
   line-height: 1.4;
   font-size: 15px;
+`;
+
+export const LineBottom = styled.div`
+  grid-area: line;
+  border-top: 2px solid #24275c;
+  padding-left: 50px;
+  margin-top: 10px;
+  // @media (max-width: 1024px) {
+  //   margin-top: 8px;
+
+  // }
 `;

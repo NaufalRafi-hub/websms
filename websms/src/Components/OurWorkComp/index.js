@@ -20,11 +20,10 @@ const OurWorkComp = () => {
     )[0].data;
     setContent(defaultContent);
     console.log(defaultContent);
-    const Parent = option.filter((item, idx) => item.option === optKey )[0].key;
+    const Parent = option.filter((item, idx) => item.option === optKey)[0].key;
     setParent(Parent);
-
   }, [optKey]);
-  
+
   // const changeSelect = (opt) => {
   //   return imageSlider.filter((item) => item.option === opt)[0].data;
   // };
@@ -50,7 +49,6 @@ const OurWorkComp = () => {
 
   // console.log(option.filter((item, idx) => item.option === optKey )[0].key);
   return (
-    
     <div className="wrapper">
       <div className="title">
         <h1>Our Work</h1>
@@ -80,7 +78,6 @@ const OurWorkComp = () => {
             onChange={(e) => {
               setOptKey(e.target.value);
               // setParent(option.filter((item, idx) => item.option === optKey )[0].key);
-
             }}
             className="select"
           >
@@ -95,15 +92,10 @@ const OurWorkComp = () => {
         </div>
       </div>
       <div className="carousel">
-        <Slider 
-          imageSlider={content} 
-          parentIdx={parent}
-        />
+        <Slider imageSlider={content} parentIdx={parent} />
       </div>
     </div>
-    
   );
-  
 };
 
 export default OurWorkComp;

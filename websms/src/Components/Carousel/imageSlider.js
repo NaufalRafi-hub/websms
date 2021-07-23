@@ -7,6 +7,10 @@ import camel from '../../images/camel.png';
 import dutch from '../../images/dutchmill.png';
 import mevius from '../../images/mevius.png';
 import sgm from '../../images/sgm.png';
+import heineken1 from '../../images/heineken1.jpg'
+import heineken2 from '../../images/heineken2.jpg'
+import heineken3 from '../../images/heineken3.jpg'
+import heineken4 from '../../images/heineken4.jpg'
 
 export default [
   {
