@@ -11,10 +11,13 @@ export const Bgwrapper = styled(motion.div)`
 `;
 
 export const BlockWrapper = styled(motion.div)`
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-rows: auto 80px;
+  grid-template-columns: 40% auto 40%;
+  grid-template-areas:  "logo nav btn"
+                        "copy copy copy";
+  // justify-content: center;
   align-items: center;
-  gap: 30%;
 `;
 
 export const Logo = styled(motion.h1)`
@@ -22,6 +25,7 @@ export const Logo = styled(motion.h1)`
   font-family: "Viga", sans-serif;
   color: white;
   font-weight: bold;
+  justify-content: center;
 `;
 
 export const Nav = styled(motion.h3)`
@@ -40,33 +44,44 @@ export const Copyright = styled(motion.h2)`
   font-weight: bold;
 `;
 
-export const LogoDiv = styled(motion.div)``;
+export const LogoDiv = styled(motion.div)`
+  grid-area: logo;
+  display: flex;
+  justify-content: flex-start;
+`;
 
 export const NavDiv = styled(motion.div)`
   display: block;
+  grid-area: nav;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 export const ContactDiv = styled(motion.div)`
   display: flex;
   gap: 60px;
+  grid-area: btn;
+  justify-content: flex-end;
 `;
 
 export const BottomDiv = styled(motion.div)`
-  margin-top: 20px;
-  display: block;
-  right: 10%;
-  position: absolute;
-  width: 20%;
+  margin-top: 30px;
+  display: flex;
+  grid-area: copy;
+  justify-content: flex-end;
 `;
 
 export const BottomWrapper = styled.div`
   display: flex;
   gap: 10px;
+  justify-content: flex-end;
+  width: 100%;
+  // padding: 50px;
 `;
 
 export const LineBottom = styled.div`
   border-top: 2px solid white;
-  padding-left: 40%;
+  padding-left: 80px;
   margin-top: 13px;
 `;
 

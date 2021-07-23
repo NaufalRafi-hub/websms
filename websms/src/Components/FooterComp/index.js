@@ -37,14 +37,15 @@ const FooterComp = () => {
             <EmailIcon />
             <WAIcon />
           </ContactDiv>
-        </BlockWrapper>
-        <BottomDiv>
+          <BottomDiv>
             <BottomWrapper>
                 <LineBottom></LineBottom>
                 <CopyIcon />
                 <Copyright>Copyright SMS Design 2021</Copyright>
             </BottomWrapper>
         </BottomDiv>
+        </BlockWrapper>
+        
       </Bgwrapper>
     </div>
   );
