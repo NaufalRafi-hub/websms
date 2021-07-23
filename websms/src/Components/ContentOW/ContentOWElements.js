@@ -21,6 +21,7 @@ export const WrapperContent = styled.div`
   display: grid;
   padding-bottom: 5%;
   width: min(45%, 27em);
+  
 `;
 
 export const ImgWrapper = styled.div`

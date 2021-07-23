@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const HeadlineOwComp = () => {
   return (
-    <div className="container-fluid">
+    <div className="wrapper-head-ow">
       <div className="judul-OW">
         <h1>Product Showcase</h1>
       </div>
