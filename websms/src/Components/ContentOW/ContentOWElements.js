@@ -2,27 +2,35 @@ import styled from "styled-components";
 
 export const WrapperOW = styled.div`
   display: block;
-  margin-top: 210px;
+  margin-top: 120px;
 `;
 export const WrapperFirstHeader = styled.div`
-  top: 10%;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 40%;
+  grid-template-areas: "head desc";
   padding-bottom: 15%;
+
 `;
 export const DivHeadline = styled.div`
-  position: absolute;
-  left: 2%;
+  grid-area: desc;
+  justify-content: flex-end;
+  display: flex;
 `;
 export const DivDesc = styled.div`
   display: block;
   margin-top: 8%;
 `;
 export const WrapperContent = styled.div`
-  display: grid;
+  display: flex;
+  flex-direction: column;
   padding-bottom: 5%;
   width: min(45%, 27em);
   
 `;
+export const DivHead = styled.div`
+  display: flex;
+  justify-content: flex-start;
+`
 
 export const ImgWrapper = styled.div`
 
@@ -34,6 +42,7 @@ export const SecHeadline = styled.h2`
   color: #24275c;
 `;
 export const Headline = styled.h2`
+  grid-area: head;
   font-family: "Viga", sans-serif;
   font-weight: bold;
   font-size: 20px;

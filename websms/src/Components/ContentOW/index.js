@@ -9,6 +9,8 @@ import {
   WrapperContent,
   DivDesc,
   WrapperOW,
+  DivHeadline,
+  DivHead,
 } from "./ContentOWElements";
 
 const ContentOW = () => {
@@ -30,7 +32,12 @@ const ContentOW = () => {
         </div>
       ))} */}
         <WrapperFirstHeader>
-          <Headline>{idPT}</Headline>
+          <DivHead>
+            <Headline>{idPT}</Headline>
+          </DivHead>
+          <DivHeadline>
+            <Desc>lorem ipsum dolor sit amet, consectetur adipis lorem ipsum dolor sit amet, consectetur adipis</Desc>
+          </DivHeadline>
         </WrapperFirstHeader>
 
         {imageSlider[type].data[key].product.map((data, index) => (
