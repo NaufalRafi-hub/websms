@@ -3,8 +3,6 @@
 }
 .wrapper-head-ow{
     margin-top: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
     display: grid;
     grid-template-rows: 30px;
     grid-template-areas: "judul OWIcon";
@@ -43,15 +41,6 @@
         font-size: 40px;
         
     }
-    .wrapper-head-ow{
-        margin-top: 100px;
-        margin-left: 80px;
-        margin-right: 80px;
-        display: grid;
-        grid-template-rows: 30px;
-        grid-template-areas: "judul OWIcon";
-    
-    }
     
 }
 
@@ -65,13 +54,7 @@
     }
     
 }
-@media screen and (max-width:600px) {
-    .wrapper-head-ow{
-        margin-left: 5%;
-        margin-right: 5%;
-    }
 
-}
 @media screen and (max-width:412px) {
     
     .judul-OW h1{
