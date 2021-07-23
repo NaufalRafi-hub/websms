@@ -14,14 +14,13 @@ import {
 } from "./ContentOWElements";
 
 const ContentOW = () => {
-  const [content, setContent] = useState([]);
   const { idPT, key, type } = new useParams();
 
   // useEffect(() => {
   //   const defContent = imageSlider.filter((data) => data.data === {idPT})[0].data;
   //   setContent(defContent);
   // },[])
-  console.log(content);
+  // console.log(content);
   return (
     <div className="container">
       <WrapperOW>

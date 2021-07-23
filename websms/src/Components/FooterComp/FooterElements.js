@@ -3,11 +3,12 @@ import { HiOutlineMail } from "react-icons/hi";
 import { FaWhatsapp, FaRegCopyright } from "react-icons/fa";
 // import { NavLink as Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export const Bgwrapper = styled(motion.div)`
   background: #24275c;
-  padding-top: 10ch;
-  padding-bottom: 10ch;
+  padding-top: 5ch;
+  padding-bottom: 5ch;
   display: block;
 `;
 
@@ -25,12 +26,12 @@ export const BlockWrapper = styled(motion.div)`
     display: flex;
     justify content: center;
     flex-direction: column;
-    gap: 3ch;
+    gap: 5ch;
 
   }
 `;
 
-export const Logo = styled(motion.h1)`
+export const Logo = styled(Link)`
   font-size: 15ch;
   font-family: "Viga", sans-serif;
   color: white;
@@ -40,15 +41,28 @@ export const Logo = styled(motion.h1)`
     font-size: 10ch;
 
   }
+  &:hover {
+    text-decoration: none;
+    outline: none;
+    color: #ffcc33;
+  }
 `;
 
-export const Nav = styled(motion.h3)`
-  font-size: 2ch;
+export const Nav = styled(Link)`
+  font-size: 2.3ch;
   font-family: "Open Sans", sans-serif;
   text-align: justify;
   text-justify: auto;
-  line-height: 1.7;
+  line-height: 2;
   color: white;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  &:hover {
+    text-decoration: none;
+    outline: none;
+    color: #ffcc33;
+  }
   @media (max-width: 1024px) {
     font-size: 1.5ch;
 
@@ -70,6 +84,7 @@ export const LogoDiv = styled(motion.div)`
   grid-area: logo;
   display: flex;
   justify-content: flex-start;
+  
 `;
 
 export const NavDiv = styled(motion.div)`
@@ -84,6 +99,9 @@ export const ContactDiv = styled(motion.div)`
   gap: 60px;
   grid-area: btn;
   justify-content: flex-end;
+  @media (max-width: 1024px) {
+    gap: 30px;
+  }
 `;
 
 export const BottomDiv = styled(motion.div)`
@@ -104,8 +122,11 @@ export const BottomWrapper = styled.div`
 export const LineBottom = styled.div`
   border-top: 2px solid white;
   padding-left: 80px;
-  margin-top: 8px;
-  
+  margin-top: 10px;
+  @media (max-width: 1024px) {
+    margin-top: 7px;
+
+  }
 `;
 
 export const EmailIcon = styled(HiOutlineMail)`

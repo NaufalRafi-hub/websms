@@ -8,7 +8,7 @@ export const WrapperFirstHeader = styled.div`
   display: grid;
   grid-template-columns: auto 40%;
   grid-template-areas: "head desc";
-  padding-bottom: 15%;
+  padding-bottom: 120px;
 
 `;
 export const DivHeadline = styled.div`
