@@ -35,7 +35,7 @@ export default [
                 file : heineken1
               },
               {
-                file : heineken1
+                file : heineken2
               },
             ]
           },

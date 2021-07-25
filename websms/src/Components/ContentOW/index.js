@@ -17,7 +17,7 @@ import {
   SubHead,
   ImgWrapper,
 } from "./ContentOWElements";
-import Image from "./Image"
+import Image from "./Image";
 
 const ContentOW = () => {
   const { idPT, key, type } = new useParams();
@@ -32,7 +32,7 @@ const ContentOW = () => {
     //   controls.start("hidden");
     // }
   }, [controls, inView]);
-  
+
   const prodVariants = {
     hidden: {
       opacity: 0,
@@ -46,7 +46,6 @@ const ContentOW = () => {
       // },
     },
   };
-
 
   // useEffect(() => {
   //   const defaultContent = imageSlider[type].data[key].product.filter(
@@ -72,30 +71,21 @@ const ContentOW = () => {
           ))}
 
         {imageSlider[type].data[key].product.map((data, index) => (
-          <WrapperContent key={index}>
+          <WrapperContent
+            key={index}
+            ref={ref}
+            initial="hidden"
+            animate={controls}
+            variants={prodVariants}
+            transition={{ duration: 0.7 }}
+          >
             <LineBottom></LineBottom>
             <SecHeadline>{data.prod}</SecHeadline>
-            <SubHead
-              ref={ref}
-              initial="hidden"
-              animate={controls}
-              variants={prodVariants}
-              transition={{ duration: 0.7 }}
-            >
-              {data.name}
-            </SubHead>
+            <SubHead>{data.name}</SubHead>
             <DivDesc>
-              <Desc
-                ref={ref}
-                initial="hidden"
-                animate={controls}
-                variants={prodVariants}
-                transition={{ duration: 1 }}
-              >
-                {data.desc}
-              </Desc>
+              <Desc>{data.desc}</Desc>
             </DivDesc>
-            <Image type={type} keys={key} idx={index}/>
+            <Image type={type} keys={key} idx={index} />
           </WrapperContent>
         ))}
       </WrapperOW>

@@ -22,6 +22,7 @@ export const DivDesc = styled.div`
   margin-top: 20px;
   grid-area: desc;
   margin-left: 60px;
+  width: min(50%, 27em);
 `;
 export const WrapperContent = styled.div`
   // display: flex;
@@ -34,19 +35,32 @@ export const WrapperContent = styled.div`
                         "desc desc"
                         "img img";
   padding-bottom: 80px;
-  width: min(50%, 27em);
+  // width: min(50%, 27em);
   
 `;
 export const DivHead = styled.div`
   display: flex;
   justify-content: flex-start;
 `
+export const Img = styled.div`
+  margin: 0;
+`
+export const ImgSrc = styled.img`
+  width: 40%;
+  // max-height: 20%;
+  max-width: 40%;
+  object-fit: cover;
+  vertical-align: bottom;
+`
 
 export const ImgWrapper = styled.div`
   margin-top: 50px;
+  margin-left: 60px;
   grid-area: img;
   display: flex;
-  margin-left: 60px;
+  flex-wrap: wrap;
+  // flex-grow: 1;
+  // height: 40vh;
 `
 export const SecHeadline = styled.h2`
   grid-area: head;

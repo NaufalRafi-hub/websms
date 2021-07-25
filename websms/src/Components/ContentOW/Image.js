@@ -1,18 +1,19 @@
 import React from "react";
 import imageSlider from "../Carousel/imageSlider";
-import { ImgWrapper } from "./ContentOWElements";
+import { Img, ImgSrc, ImgWrapper } from "./ContentOWElements";
 
-const Image = ({type, keys, idx}) => {
+const Image = ({ type, keys, idx }) => {
   console.log("type " + type);
   console.log("key " + keys);
   console.log("idx " + idx);
+  console.log(imageSlider[type].data[keys].product[idx].image);
   return (
     <>
+      <ImgWrapper >
         {imageSlider[type].data[keys].product[idx].image.map((data, index) => (
-          <ImgWrapper key={index}>
-            <img src={data.file} alt='' className='prod' width="40%"/>
-          </ImgWrapper>
+            <ImgSrc key={index} src={data.file}/>
         ))}
+      </ImgWrapper>
     </>
   );
 };
