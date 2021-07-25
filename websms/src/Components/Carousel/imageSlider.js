@@ -30,22 +30,54 @@ export default [
             name : 'Bintang Radler Display',
             desc : 
             'Menggunakan material wood, acrylic, dan sticker digital printing. Process diawali dengan wood lathe, cutting acrylic, dan menginstall sticker digital printing',
+            image : [
+              {
+                file : heineken1
+              },
+              {
+                file : heineken1
+              },
+            ]
           },
           {
             prod : 'Table Display',
             name : 'Fayrouz Display',
             desc : 
             'Menggunakan material acrylic, dan sticker digital printing. Process diawali dengan cutting acrylic, dan menginstall sticker digital printing',
+            image : [
+              {
+                file : heineken2
+              },
+              {
+                file : heineken2
+              },
+            ]
           },
           {
             prod : 'Bar Top', 
             name : 'Heineken Display', 
             desc : 'Menggunakan material acrylic, led light, sticker cutting. Process diawali dengan cutting acrylic, insttallation sticker cutting, installation LED light dan electricity', 
+            image : [
+              {
+                file : heineken3
+              },
+              {
+                file : heineken3
+              },
+            ]
           },
           {
             prod : 'Table Display', 
             name : 'Radler Bottle Display', 
             desc : 'Menggunakan material acrylic, dan sticker digital printing. Process diawali dengan cutting acrylic, dan installation sticker digital printing', 
+            image : [
+              {
+                file : heineken4
+              },
+              {
+                file : heineken4
+              },
+            ]
           },
         ]
       },

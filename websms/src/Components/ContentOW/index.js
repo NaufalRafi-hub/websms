@@ -15,12 +15,15 @@ import {
   DivHead,
   LineBottom,
   SubHead,
+  ImgWrapper,
 } from "./ContentOWElements";
+import Image from "./Image"
 
 const ContentOW = () => {
   const { idPT, key, type } = new useParams();
   const controls = useAnimation();
   const { ref, inView } = useInView();
+  const [content, setContent] = useState([]);
   useEffect(() => {
     if (inView) {
       controls.start("visible");
@@ -29,7 +32,7 @@ const ContentOW = () => {
     //   controls.start("hidden");
     // }
   }, [controls, inView]);
-
+  
   const prodVariants = {
     hidden: {
       opacity: 0,
@@ -43,6 +46,14 @@ const ContentOW = () => {
       // },
     },
   };
+
+
+  // useEffect(() => {
+  //   const defaultContent = imageSlider[type].data[key].product.filter(
+  //     (item) => item.name === idPT
+  //   )[0].image;
+  //   setContent(defaultContent);
+  // }, []);
 
   return (
     <div className="container">
@@ -65,19 +76,26 @@ const ContentOW = () => {
             <LineBottom></LineBottom>
             <SecHeadline>{data.prod}</SecHeadline>
             <SubHead
-            ref={ref}
-            initial="hidden"
-            animate={controls}
-            variants={prodVariants}
-            transition={{ duration: 0.7 }}>{data.name}</SubHead>
-            <DivDesc>
-              <Desc
               ref={ref}
               initial="hidden"
               animate={controls}
               variants={prodVariants}
-              transition={{ duration: 1 }}>{data.desc}</Desc>
+              transition={{ duration: 0.7 }}
+            >
+              {data.name}
+            </SubHead>
+            <DivDesc>
+              <Desc
+                ref={ref}
+                initial="hidden"
+                animate={controls}
+                variants={prodVariants}
+                transition={{ duration: 1 }}
+              >
+                {data.desc}
+              </Desc>
             </DivDesc>
+            <Image type={type} keys={key} idx={index}/>
           </WrapperContent>
         ))}
       </WrapperOW>
