@@ -28,10 +28,11 @@ export const WrapperContent = styled.div`
   // flex-direction: column;
   display: grid;
   grid-template-columns: auto 2fr;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: auto auto auto auto;
   grid-template-areas:  "line head" 
                         "sub sub"
-                        "desc desc";
+                        "desc desc"
+                        "img img";
   padding-bottom: 80px;
   width: min(50%, 27em);
   
@@ -42,7 +43,10 @@ export const DivHead = styled.div`
 `
 
 export const ImgWrapper = styled.div`
-
+  margin-top: 50px;
+  grid-area: img;
+  display: flex;
+  margin-left: 60px;
 `
 export const SecHeadline = styled.h2`
   grid-area: head;
