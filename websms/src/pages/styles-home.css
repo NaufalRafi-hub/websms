@@ -83,7 +83,7 @@
 
   @media screen and (max-width:600px) and (min-width: 319px) {
     .section1  {
-        background-image: url(../images/aset1.png);
+        /* background-image: url(../images/aset1.png); */
         background-position: bottom;
         background-size: contain;
         background-attachment: fixed;

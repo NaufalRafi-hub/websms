@@ -160,10 +160,5 @@
         opacity: 0;
         visibility: none;
     }
-
-    .hero::before{
-        content: '';
-    }
-
 }
 
