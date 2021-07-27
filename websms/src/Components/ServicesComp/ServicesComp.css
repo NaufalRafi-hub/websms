@@ -51,6 +51,34 @@ hr {
     line-height: 1.5;
 }
 
-/* .hr-below {
-    padding-top: 30px;
-} */
+
+.mobile {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .desktop{
+        display: none;
+    }
+
+    .mobile{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .mobile > h1 {
+        font-size: 48px;
+        color: #FFCC33;
+        font-weight: 700;
+        font-family: 'Viga', sans-serif;
+        text-align: center;
+    }
+}
+
+@media screen and (max-height: 568px){
+    .mobile > h1 {
+        font-size: 48px;
+        margin-top: 20px;
+    }
+}
