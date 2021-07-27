@@ -15,7 +15,6 @@ const OurWorkComp = () => {
       (item) => item.option === optKey
     )[0].data;
     setContent(defaultContent);
-    console.log(defaultContent);
     const Parent = option.filter((item, idx) => item.option === optKey)[0].key;
     setParent(Parent);
   }, [optKey]);
