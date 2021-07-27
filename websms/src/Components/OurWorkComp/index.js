@@ -5,21 +5,16 @@ import './OurWorkComp.css';
 import Slider from '../Carousel/Slider';
 import imageSlider from '../Carousel/imageSlider';
 
-// const contentDefault = () => {
-//   return imageSlider.filter((item) => item.option === 'display')[0].data;
-// };
-
 const OurWorkComp = () => {
   const [optKey, setOptKey] = useState('display');
   const [content, setContent] = useState([]);
 
-  useEffect (() => {
-    const defaultContent = imageSlider.filter((item) => item.option === optKey)[0].data;
+  useEffect(() => {
+    const defaultContent = imageSlider.filter(
+      (item) => item.option === optKey
+    )[0].data;
     setContent(defaultContent);
-  },[optKey])
-  // const changeSelect = (opt) => {
-  //   return imageSlider.filter((item) => item.option === opt)[0].data;
-  // };
+  }, [optKey]);
 
   const option = [
     {
@@ -39,8 +34,6 @@ const OurWorkComp = () => {
       key: 4,
     },
   ];
-
-  // console.log(content);
 
   return (
     <div className='wrapper'>
