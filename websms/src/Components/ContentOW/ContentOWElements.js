@@ -24,7 +24,7 @@ export const DivDesc = styled.div`
   margin-left: 60px;
   width: min(50%, 27em);
 `;
-export const WrapperContent = styled.div`
+export const WrapperContent = styled(motion.div)`
   // display: flex;
   // flex-direction: column;
   display: grid;

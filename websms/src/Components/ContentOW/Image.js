@@ -1,26 +1,34 @@
-import React from "react";
+import React, {useState, useEffect, useRef} from "react";
 import imageSlider from "../Carousel/imageSlider";
 import { Img, ImgSrc, ImgWrapper } from "./ContentOWElements";
+import Loading from "../../images/loading.gif";
 
 const Image = ({ type, keys, idx }) => {
-  console.log("type " + type);
-  console.log("key " + keys);
-  console.log("idx " + idx);
-  console.log(imageSlider[type].data[keys].product[idx].image);
+  
+  const [loading, setLoading] = useState(true);
+  const counter = useRef(0);
+  const array = imageSlider[type].data[keys].product[idx].image;
+  const imageLoaded = () => {
+    counter.current += 1;
+    if (counter.current >= array.length) {
+      setLoading(false);
+    }
+  }
+
   return (
     <>
-      <ImgWrapper >
+      <div style={{display: loading ? "block" : "none"}}>
+        <img src={Loading} alts=""></img>
+        {/* Loading... */}
+      </div>
+      <ImgWrapper style={{display: loading ? "none" : "flex"}}>
         {imageSlider[type].data[keys].product[idx].image.map((data, index) => (
-            <ImgSrc key={index} src={data.file}/>
+            <ImgSrc key={index} src={data.file} onLoad={imageLoaded}/>
         ))}
       </ImgWrapper>
     </>
   );
+  
 };
-//  {imageSlider[0].data[0].product.map((data, index) => (
-//         <div key={index}>
-//           <h1>{data.name}</h1>
-//           <h2>{data.desc}</h2>
-//         </div>
-//       ))}
+
 export default Image;
