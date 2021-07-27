@@ -68,7 +68,7 @@ hr {
     }
 
     .mobile > h1 {
-        font-size: 70px;
+        font-size: 48px;
         color: #FFCC33;
         font-weight: 700;
         font-family: 'Viga', sans-serif;
@@ -78,7 +78,7 @@ hr {
 
 @media screen and (max-height: 568px){
     .mobile > h1 {
-        font-size: 50px;
+        font-size: 48px;
         margin-top: 20px;
     }
 }

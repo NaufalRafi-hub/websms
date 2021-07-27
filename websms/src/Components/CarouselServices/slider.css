@@ -158,15 +158,13 @@
 
 
   .slide-title1{
-    font-size: 4ch;
+    font-size: 3ch;
     text-transform: capitalize;
     color: #24275C;
     text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: start;
-    /* align-content: center; */
-    /* margin-bottom: 5%; */
   }
 
   .slide-title1 > hr {
@@ -174,7 +172,7 @@
     padding-left: 25%;
     align-self: center;
     position: relative;
-    top: -20%;
+    top: -25%;
     margin-right: 5%;
   }
 
@@ -214,14 +212,25 @@
 
 @media screen and (max-height: 569px) {
   .slide-title1 {
-    font-size: 3ch;
+    font-size: 2ch;
     margin: 0;
   }
 
   .slide-title1 > hr {
-    top: -10%;
+    top: -20%;
   }
 
+  .slide-text1 {
+    font-size: 1.5ch;
+    margin-bottom: 0;
+  }
+
+  .example {
+    font-size: 1.5ch;
+  }
+}
+
+@media screen and (max-width: 415px){
   .slide-text1 {
     font-size: 1.5ch;
     margin-bottom: 0;
