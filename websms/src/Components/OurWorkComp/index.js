@@ -1,12 +1,12 @@
-import React from "react";
-import { useState, useEffect } from "react";
-import { Carousel, Card, Button } from "react-bootstrap";
-import "./OurWorkComp.css";
-import Slider from "../Carousel/Slider";
-import imageSlider from "../Carousel/imageSlider";
+import React from 'react';
+import { useState, useEffect } from 'react';
+import { Carousel, Card, Button } from 'react-bootstrap';
+import './OurWorkComp.css';
+import Slider from '../Carousel/Slider';
+import imageSlider from '../Carousel/imageSlider';
 
 const OurWorkComp = () => {
-  const [optKey, setOptKey] = useState("display");
+  const [optKey, setOptKey] = useState('display');
   const [content, setContent] = useState([]);
   const [parent, setParent] = useState(0);
 
@@ -15,9 +15,6 @@ const OurWorkComp = () => {
       (item) => item.option === optKey
     )[0].data;
     setContent(defaultContent);
-<<<<<<< HEAD
-  }, [optKey]);
-=======
     console.log(defaultContent);
     const Parent = option.filter((item, idx) => item.option === optKey)[0].key;
     setParent(Parent);
@@ -26,38 +23,34 @@ const OurWorkComp = () => {
   // const changeSelect = (opt) => {
   //   return imageSlider.filter((item) => item.option === opt)[0].data;
   // };
->>>>>>> main
 
   const option = [
     {
-      option: "display",
+      option: 'display',
       key: 0,
     },
     {
-      option: "sign",
+      option: 'sign',
       key: 1,
     },
     {
-      option: "booth",
+      option: 'booth',
       key: 2,
     },
     {
-      option: "Installation",
+      option: 'Installation',
       key: 3,
     },
   ];
 
-<<<<<<< HEAD
-=======
   // console.log(option.filter((item, idx) => item.option === optKey )[0].key);
->>>>>>> main
   return (
-    <div className="wrapper">
-      <div className="title">
+    <div className='wrapper'>
+      <div className='title'>
         <h1>Our Work</h1>
       </div>
-      <div className="aside">
-        <ul className="option">
+      <div className='aside'>
+        <ul className='option'>
           <li></li>
           {option.map((item, index) => (
             <>
@@ -66,24 +59,22 @@ const OurWorkComp = () => {
                 onClick={() => {
                   setOptKey(item.option);
                   // setParent(index)
-                }}
-              >
-                <hr className={optKey === item.option ? "strip" : ""} />
+                }}>
+                <hr className={optKey === item.option ? 'strip' : ''} />
                 {item.option}
               </li>
             </>
           ))}
         </ul>
-        <div className="mobile">
+        <div className='mobile'>
           <select
-            name="option"
-            id="option"
+            name='option'
+            id='option'
             onChange={(e) => {
               setOptKey(e.target.value);
               // setParent(option.filter((item, idx) => item.option === optKey )[0].key);
             }}
-            className="select"
-          >
+            className='select'>
             {option.map((item) => (
               <>
                 <option value={item.option} key={item.key}>
@@ -94,8 +85,8 @@ const OurWorkComp = () => {
           </select>
         </div>
       </div>
-      <div className="carousel">
-        <Slider imageSlider={content} parentIdx={parent} optKey={optKey}/>
+      <div className='carousel'>
+        <Slider imageSlider={content} parentIdx={parent} optKey={optKey} />
       </div>
     </div>
   );
