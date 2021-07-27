@@ -92,7 +92,7 @@ const OurWorkComp = () => {
         </div>
       </div>
       <div className="carousel">
-        <Slider imageSlider={content} parentIdx={parent} />
+        <Slider imageSlider={content} parentIdx={parent} optKey={optKey}/>
       </div>
     </div>
   );

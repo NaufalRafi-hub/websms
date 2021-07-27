@@ -34,8 +34,8 @@
 }
 
 .slide-image {
-  /* width: 100%; */
-  height: 65%;
+  /* width: 30%; */
+  height: 55%;
   align-self: center;
 }
 
@@ -57,7 +57,7 @@
   /* font-size: 50px; */
   /* position: absolute; */
   text-align: left;
-  padding-left: 50px;
+  padding-left: 100px;
   /* top: 40%; */
   z-index: 10;
 }
@@ -65,28 +65,30 @@
 .slide-title {
   grid-area: title;
   font-family: 'Viga', sans-serif;
-  font-size: 20px;
+  font-size: 2ch;
   margin: 15px 0;
 }
 
 .slide-text {
   grid-area: description;
   font-family: sans-serif;
-  font-size: 15px;
+  font-size: 1.5ch;
   text-align: justify;
 }
 
 .logo {
   grid-area: logo;
-  width: 75%;
+  width: 60%;
   display: flex;
   align-items: center;
+  margin-left: 35px;
   justify-content: space-around;
 }
 
 .detail-button {
   grid-area: button-detail;
-  margin-left: 50px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   align-content: center;
 }
@@ -238,20 +240,38 @@
     padding-left: 55%;
   }
   .detail-button{
-    width: min(100%, 27em);
+    width: min(90%, 27em);
     margin: 0 auto;
   }
+  .detail-wrap{
+    width: min(90%, 27em);
+  }
+  .slide-title {
+    font-size: 2ch;
+  }
+  
+  .slide-text {
+    font-size: 1.5ch;
+  }
+  
 }
 
 @media screen and (max-width: 368px){
   .detail-wrap{
     grid-template-rows: 1.5fr 2fr;
   }
+  .detail-button > hr {
+    padding-left: 50%;
+  }
+  .detail-button{
+    width: min(90%, 27em);
+    margin: 0 auto;
+  }
   /* .detail-button{
     width: min(100%, 20em);
     margin: 0 auto;
   } */
-  .detail-button > hr {
+  /* .detail-button > hr {
     padding-left: 55%;
-  }
+  } */
 }

@@ -4,10 +4,16 @@ import Arrow from './Arrow';
 import Dots from './Dots';
 import './slider.css';
 
-const Slider = ({imageSlider, parentIdx}) => {
+const Slider = ({imageSlider, parentIdx, optKey}) => {
   // console.log('parent ' + parentIdx)
   const len = imageSlider.length - 1;
   const [activeIndex, setActiveIndex] = useState(0);
+  const [optName, setOptName] = useState("Display");
+  
+  if(optName != optKey) {
+    setActiveIndex(0);
+    setOptName(optKey);
+  }
   // useEffect(() => {
   //   const interval = setInterval(() => {
   //     setActiveIndex(activeIndex === len ? 0 : activeIndex + 1);
