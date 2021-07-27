@@ -8,10 +8,11 @@
     display: inline-block;
 }
 .judul-aboutdetIcon{
-    top: 88px;
-    right: 15%;
-    position: absolute;
-    display: inline-block;
+    margin-top: 88px;
+    /* right: 15%;
+    position: absolute; */
+    display: flex;
+    justify-content: flex-end;
     text-decoration: none;
 }
 

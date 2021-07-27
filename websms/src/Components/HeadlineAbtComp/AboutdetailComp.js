@@ -11,7 +11,7 @@ export const BackIcon = styled(MdKeyboardBackspace)`
 
 export const BackIconDiv = styled.div`
   position: absolute;
-  top: 20px;
+  margin-top: 20px;
   background: transparent;
   border: transparent;
   // font-size: 2.2rem;

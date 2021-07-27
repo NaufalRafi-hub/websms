@@ -2,6 +2,7 @@ import React, {useState, useEffect, useRef} from "react";
 import imageSlider from "../Carousel/imageSlider";
 import { Img, ImgSrc, ImgWrapper } from "./ContentOWElements";
 import Loading from "../../images/loading.gif";
+import { motion } from "framer-motion";
 
 const Image = ({ type, keys, idx }) => {
   

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const HeadlineAbtComp = () => {
   return (
-    <div className="container-fluid">
+    <div className="container">
       <div className="judul-aboutdet">
         <h1>About Us</h1>
       </div>
