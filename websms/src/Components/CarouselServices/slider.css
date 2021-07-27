@@ -178,6 +178,10 @@
     margin-right: 5%;
   }
 
+  .text-wrapper {
+    height: 130px;
+  }
+
   .slide-text1 {
     padding-left: 0;
     line-height: 2rem;

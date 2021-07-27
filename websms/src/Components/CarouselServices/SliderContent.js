@@ -16,9 +16,11 @@ const SliderContent = ({ activeIndex, imageSlider, parentIdx }) => {
               <hr />
               <span>{slide.name}</span>
             </h2>
-            <h3 className='slide-text1'>
-              <span>{slide.description}</span>
-            </h3>
+            <div className='text-wrapper'>
+              <h3 className='slide-text1'>
+                <span>{slide.description}</span>
+              </h3>
+            </div>
             <hr className='garis' />
             <div className='example'>
               <ul>
