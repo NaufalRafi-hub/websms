@@ -5,17 +5,14 @@ import { NavLink as Link } from "react-router-dom";
 import { BsList } from "react-icons/bs";
 
 export const Nav = styled.nav`
-    background: transparent;
+    background: #24275c;
     height: 80px;
     display: flex;
-    justify-content: start;
     font-weight: 700;
     z-index: 998;
     position: fixed;
-    text-decoration: none;
-    outline: none;
-    background: transparent;
-    border: transparent;
+    
+
 `;
 
 export const NavLink = styled(Link)`
@@ -31,6 +28,11 @@ export const NavLink = styled(Link)`
     outline: none;
     background: transparent;
     border: transparent;
+    &:hover {
+      text-decoration: none;
+      outline: none;
+      color: #ffcc33;
+    }
 
     @media screen and (max-width:600px) and (min-width: 319px) {
         position: fixed;
@@ -47,6 +49,9 @@ export const NavIcon = styled.div`
   color: #24275c;
     @media screen and (max-width:600px) and (min-width: 319px) {
         right: 25px;
+    }
+    &:hover {
+      color: #ffcc33;
     }
 
 `;

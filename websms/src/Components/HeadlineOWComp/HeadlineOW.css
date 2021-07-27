@@ -1,17 +1,18 @@
 * {
     margin: 0;
 }
+.wrapper-head-ow{
+    margin-top: 100px;
+    display: grid;
+    grid-template-rows: 30px;
+    grid-template-areas: "judul OWIcon";
+
+}
 .judul-OW{
-    top: 83px;
-    left: 10%;
-    position: absolute;
-    display: inline-block;
+    grid-area: "judul";
 }
 .OWIcon{
-    top: 77px;
-    right: 20%;
-    position: absolute;
-    display: inline-block;
+    grid-area: "OWIcon"
 }
 
 .judul-OW h1{
@@ -21,8 +22,47 @@
     font-family: 'Viga', sans-serif;
 }
 
-.OWIcon h2 {
+.link-prod {
     font-family: 'Open Sans', sans-serif;
     font-size: 30px;
+    font-weight: bold;
     color: #24275c;
+    text-decoration: none;
 }
+
+.link-prod:hover {
+    text-decoration: none;
+    color:#FFCC33;
+}
+
+@media screen and (max-width:768px) {
+    
+    .judul-OW h1{
+        font-size: 40px;
+        
+    }
+    
+}
+
+@media screen and (max-width:643px) {
+    
+    .judul-OW h1{
+        font-size: 30px;
+    }
+    .link-prod {
+        font-size: 25px;
+    }
+    
+}
+
+@media screen and (max-width:412px) {
+    
+    .judul-OW h1{
+        font-size: 22px;
+    }
+    .link-prod {
+        font-size: 17px;
+    }
+    
+}
+

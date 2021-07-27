@@ -88,10 +88,10 @@ class FullpageWrapper extends React.Component {
   }
 }
 
-ReactDOM.render(
-  <FullpageWrapper />,
+// ReactDOM.render(
+//   <FullpageWrapper />,
 
-  document.getElementById('root')
-);
+//   document.getElementById('root')
+// );
 
 export default FullpageWrapper;

@@ -12,6 +12,11 @@
     right: 15%;
     position: absolute;
     display: inline-block;
+    text-decoration: none;
+}
+
+.judul-aboutdetIcon:hover{
+    text-decoration: none;
 }
 
 .judul-aboutdet h1{
@@ -21,10 +26,18 @@
     font-family: 'Viga', sans-serif;
 }
 
-.judul-aboutdetIcon h2 {
+.IconLink {
     font-family: 'Open Sans', sans-serif;
     font-size: 30px;
+    font-weight: bold;
     color: #24275c;
+    text-decoration: none;
+}
+.IconLink:hover {
+    text-decoration: none;
+    /* color:#FFCC33; */
+    color:#FFCC33;
+    /* font-size: 30px; */
 }
 
 .img-about-detail {

@@ -22,29 +22,29 @@ const FooterComp = () => {
       <Bgwrapper>
         <BlockWrapper>
           <LogoDiv>
-            <Logo>SMS</Logo>
+            <Logo to="/">SMS</Logo>
           </LogoDiv>
           <NavDiv>
-            <Nav>Home</Nav>
-            <Nav>About Us</Nav>
-            <Nav>Services</Nav>
-            <Nav>Our Work</Nav>
-            <Nav>Track Order</Nav>
-            <Nav>Contact Us</Nav>
+            <Nav to="/">Home</Nav>
+            <Nav to="/#2">About Us</Nav>
+            <Nav to="/#3">Services</Nav>
+            <Nav to="/#4">Our Work</Nav>
+            <Nav to="/#5">Track Order</Nav>
+            <Nav to="/#6">Contact Us</Nav>
           </NavDiv>
 
           <ContactDiv>
             <EmailIcon />
             <WAIcon />
           </ContactDiv>
-        </BlockWrapper>
-        <BottomDiv>
+          <BottomDiv>
             <BottomWrapper>
-                <LineBottom></LineBottom>
-                <CopyIcon />
-                <Copyright>Copyright SMS Design 2021</Copyright>
+              <LineBottom></LineBottom>
+              <CopyIcon />
+              <Copyright>Copyright SMS Design 2021</Copyright>
             </BottomWrapper>
-        </BottomDiv>
+          </BottomDiv>
+        </BlockWrapper>
       </Bgwrapper>
     </div>
   );

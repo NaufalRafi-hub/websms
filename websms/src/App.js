@@ -1,6 +1,6 @@
 // import './App.css';
 import React, { useState } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import aboutus from "./pages/aboutus";
 import Home from "./pages/home";
 import ProductShowcase from "./pages/ProductShowcase"
@@ -16,16 +16,16 @@ function App() {
     setIsOpen(!isOpen);
   };
   return (
-    <Router>
+    <BrowserRouter>
       <Navbar toggle={toggle} />
       <SidebarComp isOpen={isOpen} toggle={toggle} />
       <Switch>
         <Route path="/" component={Home} exact />
         <Route path="/aboutus" component={aboutus} exact />
-        <Route path="/Product-Showcase" component={ProductShowcase} exact />
+        <Route path="/product/:idPT/:key/:type" component={ProductShowcase} exact/>
         <Route component={Error} />
       </Switch>
-    </Router>
+    </BrowserRouter>
   );
 }
 
