@@ -11,8 +11,6 @@ export const Nav = styled.nav`
     font-weight: 700;
     z-index: 998;
     position: fixed;
-    
-
 `;
 
 export const NavLink = styled(Link)`
@@ -65,7 +63,7 @@ export const Bars = styled(BsList)`
 
 const Navbar = ({ toggle }) => {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid" style={{background:"white"}}>
         <Nav>
           <NavLink to="/">SMS</NavLink>
           <NavIcon onClick={toggle}>
