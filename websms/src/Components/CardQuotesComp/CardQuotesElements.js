@@ -33,14 +33,17 @@ export const Quotes = styled.h2`
   font-family: "Open Sans", sans-serif;
   font-size: 3ch;
 `;
-export const CardHeader = styled.div``;
+export const CardHeader = styled.div`
+// padding-bottom: 70px`;
 export const CardBottom = styled.div`
-  margin-top: 70%;
+  // margin-top: 70px;
   display: grid;
-  position: relative;
-  grid-template-columns: 75px 1fr;
+  position: absolute;
+  bottom: 20px;
+  grid-template-columns: 75px 60%;
   grid-template-areas: "ava det"
-//   align-items: flex-end;
+  // align-items: center;
+  // align-items: flex-end;
 `;
 export const CardAvatar = styled.div`
   grid-area: ava;
@@ -70,4 +73,10 @@ export const Name = styled.h2`
     align-items: center;
     color: #24275c;
     // z-index: 10;
+`
+export const Img = styled.img`
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 5px;
 `

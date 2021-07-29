@@ -6,6 +6,7 @@ import {
   CardHeader,
   CardWrapper,
   Head,
+  Img,
   Line,
   Name,
   Quotes,
@@ -23,7 +24,7 @@ const CardQuotesComp = () => {
           </CardHeader>
           <CardBottom>
             <CardAvatar>
-
+              <Img src={data.ava} alt="profile"/>
             </CardAvatar>
             <CardDetails>
                 <Head>

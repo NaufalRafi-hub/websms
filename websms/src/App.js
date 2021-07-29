@@ -12,16 +12,16 @@ import Loading from "./images/loading.gif";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    let timeOut = setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-    return () => {
-      clearTimeout(timeOut);
-    }
-  },[]);
+  // useEffect(() => {
+  //   let timeOut = setTimeout(() => {
+  //     setLoading(false);
+  //   }, 2000);
+  //   return () => {
+  //     clearTimeout(timeOut);
+  //   }
+  // },[]);
 
   //function to set isOpen to true when toggle is clicked
   const toggle = () => {
@@ -29,12 +29,12 @@ function App() {
   };
   return (
     <> 
-    {loading ? (
+    {/* {loading ? (
       <div>
         <img src={Loading} alts=""></img>
-        {/* <h1>hai ngabers!!</h1> */}
+        <h1>hai ngabers!!</h1>
       </div>
-    ):(
+    ):( */}
       <BrowserRouter>
       <Navbar toggle={toggle} />
       <SidebarComp isOpen={isOpen} toggle={toggle} />
@@ -45,7 +45,7 @@ function App() {
         <Route component={Error} />
       </Switch>
     </BrowserRouter>
-    )}
+    {/* )} */}
     </>
   );
 }
