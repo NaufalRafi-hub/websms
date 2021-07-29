@@ -7,6 +7,7 @@ import OurOfficeAbtComp from "../Components/OurOfficeAbtComp";
 import FooterComp from "../Components/FooterComp";
 import HeroExpertiseComp from "../Components/HeroExpertiseComp";
 import QuotesAbtComp from "../Components/QuotesAbtComp";
+import ClientAbtComp from "../Components/ClientAbtComp";
 
 const aboutus = () => {
   return (
@@ -18,6 +19,7 @@ const aboutus = () => {
       <IsiaboutComp />
       <OurOfficeAbtComp />
       <QuotesAbtComp />
+      <ClientAbtComp />
       <FooterComp />
     </>
   );

@@ -13,7 +13,8 @@
   width: var(--widths);
   position: relative;
   margin: auto;
-  overflow: hidden;
+  /* overflow: hidden; */
+  /* margin-bottom: 50px; */
 }
 
 .active2 {
@@ -112,11 +113,12 @@
 }
 
 .all-dots2 {
+  /* margin-top: 50px; */
   width: 100%;
   height: 100%;
   position: absolute;
   display: flex;
-  top: 90%;
+  top: 100%;
   justify-content: center;
   z-index: 99;
 }
