@@ -78,8 +78,10 @@
 
 .slide-image2 {
   grid-area: img;
-  /* width: 30%; */
-  height: 55%;
+  width: 450px;
+  height: 300px;
+  box-shadow: -14px 18px 20px rgba(0, 0, 0, 0.25);
+  /* border-radius: 10px; */
   /* align-self: center; */
 }
 
@@ -114,7 +116,7 @@
   height: 100%;
   position: absolute;
   display: flex;
-  top: 90%;
+  top: 96%;
   justify-content: center;
   z-index: 99;
 }
