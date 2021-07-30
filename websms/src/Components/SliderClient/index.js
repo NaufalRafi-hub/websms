@@ -30,7 +30,7 @@ export default function SliderClient() {
     ],
   };
   return (
-    <div className="container">
+    <div>
       <Wrapper>
         <Slider {...settings}>
           {Data.map((data, index) => (

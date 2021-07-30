@@ -1,16 +1,19 @@
 * {
     margin: 0;
 }
-.judul-aboutdet{
-    top: 83px;
-    left: 10%;
-    position: absolute;
-    display: inline-block;
+.wrapper-head-abt{
+    margin-top: 100px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: "judulABT ABTIcon";
+    align-items: center;
+
+}
+.judul-abt{
+    grid-area: judulABT;
 }
 .judul-aboutdetIcon{
-    margin-top: 88px;
-    /* right: 15%;
-    position: absolute; */
+    grid-area: ABTIcon;
     display: flex;
     justify-content: flex-end;
     text-decoration: none;
@@ -20,7 +23,7 @@
     text-decoration: none;
 }
 
-.judul-aboutdet h1{
+.judul-abt h1{
     font-size: 70px;
     color: #FFCC33;
     font-weight: 700;
@@ -36,14 +39,18 @@
 }
 .IconLink:hover {
     text-decoration: none;
-    /* color:#FFCC33; */
     color:#FFCC33;
-    /* font-size: 30px; */
 }
 
 .img-about-detail {
-    /* position: fixed; */
     margin-top: 150px;
     text-align: center;
-
+}
+@media screen and (max-width:768px) {
+    
+    .judul-abt h1{
+        font-size: 60px;
+        
+    }
+    
 }
