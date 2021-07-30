@@ -7,6 +7,14 @@ export const BackIcon = styled(MdKeyboardBackspace)`
   // &:hover {
   //   color: #FFCC33;
   // }
+  @media screen and (max-width:415px) {
+    font-size: 2.5rem;
+    
+  }
+@media screen and (max-width:325px) {
+   font-size: 2rem;
+  
+}
 `;
 
 export const BackIconDiv = styled.div`
