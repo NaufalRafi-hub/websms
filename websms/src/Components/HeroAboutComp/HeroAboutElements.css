@@ -15,7 +15,7 @@
 .sub-hero-abt {
     grid-area: sub-abt;
     margin-left: 50%;
-    padding-top: 165px;
+    margin-top: 165px;
     /* margin-left: 500px; */
     /* width: min(80%, 100em); */
     /* text-align: center; */
@@ -33,11 +33,17 @@
         grid-area: sub-abt;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 100px;
+        margin-top: 80px;
+        padding: 16%;
     }
     .judul-hero-abt {
         grid-area: head-abt;
         margin-left: auto;
         margin-right: auto;
+    }
+}
+@media screen and (max-width:380px) {
+    .sub-hero-abt {
+        margin-top: 30px;
     }
 }

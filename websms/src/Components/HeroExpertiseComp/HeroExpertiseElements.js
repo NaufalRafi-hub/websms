@@ -6,6 +6,15 @@ export const Headline = styled(motion.h1)`
   font-family: "Viga", sans-serif;
   color: #ffcc33;
   font-weight: bold;
+  text-align: center;
+  @media screen and (max-width:770px) {
+    // padding: 10%;
+    font-size: 3.5rem;
+  }
+  @media screen and (max-width:380px) {
+    padding: 10%;
+    font-size: 3.2rem;
+  }
 `;
 
 export const Subhead = styled(motion.h2)`
@@ -14,6 +23,9 @@ export const Subhead = styled(motion.h2)`
   text-align: justify;
   text-justify: auto;
   line-height: 1.7;
+  @media screen and (max-width:770px) {
+    text-align: left;
+  }
 `;
 
 export const Wrapperexp = styled.div`
@@ -35,10 +47,15 @@ export const Judulexp = styled.div`
   }
 `;
 export const Subexp = styled.div`
-  padding-top: 165px;
+  margin-top: 165px;
   @media screen and (max-width:770px) {
-    padding-top: 100px;
+    // margin-top: 140px;
+    margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
+    padding: 16%;
+  }
+  @media screen and (max-width:380px) {
+    margin-top: 30px;
   }
 `;

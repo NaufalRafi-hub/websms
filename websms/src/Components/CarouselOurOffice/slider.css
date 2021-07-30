@@ -45,10 +45,11 @@
   gap: 10px;
   margin-top: 20px;
   align-items: center;
+  
 }
 
+
 .slide-title2 {
-  grid-area: title;
   font-family: "Viga", sans-serif;
   font-size: 3ch;
   /* margin: 15px 0; */
@@ -67,8 +68,10 @@
 }
 
 .quotes {
+  grid-area: title;
   display: flex;
   flex-direction: column;
+
 }
 
 .quotes > h1 {
@@ -138,4 +141,19 @@
   background-color: #24275c;
 }
 
+@media screen and (max-width:513px) {
+  .detail-wrap2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+  }
+  .slide-title2 {
+    text-align: center;
+  }
+  .quotes {
+    /* justify-content: center; */
+    width: min(90%,20em);
+  }
+}
 
