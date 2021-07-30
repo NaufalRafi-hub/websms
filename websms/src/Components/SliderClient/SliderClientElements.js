@@ -7,6 +7,7 @@ export const Wrapper = styled.div`
     // align-items: center;
     // // align-content: center;
     // gap: 10px;
+    margin-top: 160px;
     margin-bottom: 190px;
 `
 export const Img = styled.img`

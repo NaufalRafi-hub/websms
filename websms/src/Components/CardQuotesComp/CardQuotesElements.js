@@ -1,10 +1,23 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
+  margin-top: 160px;
   display: flex;
   flex-direction: rows;
-  padding: 3rem;
+  padding-bottom: 3.5rem;
   overflow-x: scroll;
+  @media screen and (max-width:770px) {
+    // padding: 10%;
+    // font-size: 3.5rem;
+    margin-top: 120px;
+  }
+  @media screen and (max-width:426px) {
+    // padding: 10%;
+    margin-top: 80px;
+  }
+  @media screen and (max-width:380px) {
+    margin-top: 50px;
+  }
 `;
 
 export const CardWrapper = styled.div`
