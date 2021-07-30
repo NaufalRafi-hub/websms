@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import imageSlider from "../Carousel/imageSlider";
 import { useParams } from "react-router-dom";
 import { useAnimation } from "framer-motion";
@@ -19,11 +19,13 @@ import {
 } from "./ContentOWElements";
 import Image from "./Image";
 
+
 const ContentOW = () => {
   const { idPT, key, type } = new useParams();
   const controls = useAnimation();
   const { ref, inView } = useInView();
-  const [content, setContent] = useState([]);
+ 
+
   useEffect(() => {
     if (inView) {
       controls.start("visible");
@@ -47,48 +49,45 @@ const ContentOW = () => {
     },
   };
 
-  // useEffect(() => {
-  //   const defaultContent = imageSlider[type].data[key].product.filter(
-  //     (item) => item.name === idPT
-  //   )[0].image;
-  //   setContent(defaultContent);
-  // }, []);
+  
 
   return (
     <div className="container">
-      <WrapperOW>
-        {imageSlider[type].data
-          .filter((data) => data.title === idPT)
-          .map((item, key) => (
-            <WrapperFirstHeader key={key}>
-              <DivHead>
-                <Headline>{item.title}</Headline>
-              </DivHead>
-              <DivHeadline>
-                <Desc>{item.description}</Desc>
-              </DivHeadline>
-            </WrapperFirstHeader>
-          ))}
+      
+        <WrapperOW>
+          {imageSlider[type].data
+            .filter((data) => data.title === idPT)
+            .map((item, key) => (
+              <WrapperFirstHeader key={key}>
+                <DivHead>
+                  <Headline>{item.title}</Headline>
+                </DivHead>
+                <DivHeadline>
+                  <Desc>{item.description}</Desc>
+                </DivHeadline>
+              </WrapperFirstHeader>
+            ))}
 
-        {imageSlider[type].data[key].product.map((data, index) => (
-          <WrapperContent
-            key={index}
-            ref={ref}
-            initial="hidden"
-            animate={controls}
-            variants={prodVariants}
-            transition={{ duration: 0.7 }}
-          >
-            <LineBottom></LineBottom>
-            <SecHeadline>{data.prod}</SecHeadline>
-            <SubHead>{data.name}</SubHead>
-            <DivDesc>
-              <Desc>{data.desc}</Desc>
-            </DivDesc>
-            <Image type={type} keys={key} idx={index} />
-          </WrapperContent>
-        ))}
-      </WrapperOW>
+          {imageSlider[type].data[key].product.map((data, index) => (
+            <WrapperContent
+              key={index}
+              ref={ref}
+              initial="hidden"
+              animate="visible"
+              variants={prodVariants}
+              transition={{ duration: 0.7 }}
+            >
+              <LineBottom></LineBottom>
+              <SecHeadline>{data.prod}</SecHeadline>
+              <SubHead>{data.name}</SubHead>
+              <DivDesc>
+                <Desc>{data.desc}</Desc>
+              </DivDesc>
+              <Image type={type} keys={key} idx={index} />
+            </WrapperContent>
+          ))}
+        </WrapperOW>
+       
     </div>
   );
 };
