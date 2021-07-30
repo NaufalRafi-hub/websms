@@ -2,14 +2,14 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 export const Headline = styled(motion.h1)`
-  font-size: 70px;
+  font-size: 4.5rem;
   font-family: "Viga", sans-serif;
   color: #ffcc33;
   font-weight: bold;
 `;
 
 export const Subhead = styled(motion.h2)`
-  font-size: 23px;
+  font-size: 1.3rem;
   font-family: "Open Sans", sans-serif;
   text-align: justify;
   text-justify: auto;
@@ -18,13 +18,27 @@ export const Subhead = styled(motion.h2)`
 
 export const Wrapperexp = styled.div`
   margin-top: 256px;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  @media screen and (max-width:770px) {
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
 
 export const Judulexp = styled.div`
   margin-left: 50%;
+  @media screen and (max-width:770px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
 export const Subexp = styled.div`
   padding-top: 165px;
-  margin-left: 10%;
+  @media screen and (max-width:770px) {
+    padding-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;

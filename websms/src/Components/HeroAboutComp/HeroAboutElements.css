@@ -1,15 +1,43 @@
 
 .wrapper-hero-abt {
     margin-top: 256px;
-    display: block;
+    display: flex;
+    flex-direction: column;
 
 }
 .judul-hero-abt {
-    margin-left: 10%;
+    grid-area: head-abt;
+
+    /* display: block; */
+    /* margin-left: 10%; */
 }
 
 .sub-hero-abt {
-    padding-top: 165px;
+    grid-area: sub-abt;
     margin-left: 50%;
+    padding-top: 165px;
+    /* margin-left: 500px; */
+    /* width: min(80%, 100em); */
+    /* text-align: center; */
+    /* margin-left: 50%; */
 
+}
+@media screen and (max-width:770px) {
+    .wrapper-hero-abt {
+        margin-top: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+    .sub-hero-abt {
+        grid-area: sub-abt;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 100px;
+    }
+    .judul-hero-abt {
+        grid-area: head-abt;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
