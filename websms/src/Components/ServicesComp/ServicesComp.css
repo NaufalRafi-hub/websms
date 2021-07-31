@@ -2,20 +2,20 @@
 .judul {
     margin-top: 0px;
     top: 83px;
-    position: absolute;
+    /* position: absolute; */
     padding-bottom: 50px;
     
 }
 
 .judul h1{
-    font-size: 90px;
+    font-size: 6rem;
     color: #FFCC33;
     font-weight: 700;
     font-family: 'Viga', sans-serif;
 }
 
 .content {
-    margin-top: 90px;
+    /* margin-top: 10%; */
     justify-content: center;
 }
 .content h1{
@@ -56,7 +56,7 @@ hr {
     display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
     .desktop{
         display: none;
     }
@@ -68,7 +68,7 @@ hr {
     }
 
     .mobile > h1 {
-        font-size: 48px;
+        font-size: 60px;
         color: #FFCC33;
         font-weight: 700;
         font-family: 'Viga', sans-serif;
@@ -82,3 +82,8 @@ hr {
         margin-top: 20px;
     }
 }
+@media screen and (max-height: 640px) {
+    .judul h1 {
+      font-size: 40px;
+    }
+  }

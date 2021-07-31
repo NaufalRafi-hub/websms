@@ -135,7 +135,7 @@
   }
 
   .title > h1 {
-    font-size: 80px;
+    font-size: 60px;
   }
 
   .mobile {
@@ -144,14 +144,14 @@
   }
 }
 
-@media screen and (max-width: 368px){
+@media screen and (max-width: 380px){
   .title > h1 {
-    font-size: 64px;
+    font-size: 40px;
   }
 }
 
-@media screen and (max-height: 870px) {
+@media screen and (max-height: 640px) {
   .title > h1 {
-    font-size: 48px;
+    font-size: 40px;
   }
 }

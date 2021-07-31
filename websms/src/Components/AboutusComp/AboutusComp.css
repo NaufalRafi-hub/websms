@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,400&display=swap');
 .sub-about h1 {
-    font-size: 90px;
+    font-size: 6rem;
     color: #FFCC33;
     font-weight: bold;
     font-family: 'Viga', sans-serif;
@@ -126,7 +126,11 @@
         
     }
 }
-
+@media screen and (max-height: 640px) {
+    .sub-about h1 {
+      font-size: 40px;
+    }
+  }
 
 
 

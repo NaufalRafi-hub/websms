@@ -9,7 +9,7 @@
 .judul-track h1 {
     font-family: 'Viga', sans-serif;
     color: #FFCC33;
-    font-size: 90px;
+    font-size: 6rem;
     font-weight: bold;
 
       
@@ -73,3 +73,9 @@
         font-size: 25px;
     }
  } 
+
+ @media screen and (max-height: 640px) {
+    .judul-track h1 {
+      font-size: 40px;
+    }
+  }

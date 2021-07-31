@@ -9,7 +9,7 @@ import jti from "../../images/jti.png";
 import nutricia from "../../images/nutricia.png";
 import softex from "../../images/softex.png";
 import xl from "../../images/xl.png";
-import unilever from "../../images/unilever.png";
+import unilever from "../../images/unilever2.png";
 import telkom from "../../images/telkom.png";
 import samsung from "../../images/samsung.png";
 import mbi from "../../images/mbi.png";

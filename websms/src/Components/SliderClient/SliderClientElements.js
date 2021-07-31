@@ -13,4 +13,9 @@ export const Wrapper = styled.div`
 export const Img = styled.img`
     width: 80%;
     align-items: center;
+    // min-width: 100px;
+    @media screen and (max-width:770px) {
+        // width: 90%;
+        // padding-right: 60px;
+      }
 `
