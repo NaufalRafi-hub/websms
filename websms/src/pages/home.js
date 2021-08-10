@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import 'fullpage.js/vendors/scrolloverflow'; // Optional. When using scrollOverflow:true
 import ReactFullpage from '@fullpage/react-fullpage';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -17,6 +16,7 @@ import {
   Popup,
   TileLayer,
 } from 'react-leaflet';
+import ReactLeafletGoogleLayer from 'react-leaflet-google-layer';
 class FullpageWrapper extends React.Component {
   onLeave(origin, destination, direction) {
     console.log('Leaving section ' + origin.index);
@@ -50,7 +50,6 @@ class FullpageWrapper extends React.Component {
                     <ServicesComp />
                   </div>
                   <div className='container section' data-anchor='page4'>
-                    {/* <h3>Our Work</h3> */}
                     <OurWorkComp />
                   </div>
                   <div className='container section' data-anchor='page5'>
@@ -62,17 +61,46 @@ class FullpageWrapper extends React.Component {
                       <div></div>
                       <MapContainer
                         center={[-6.305261349820201, 106.71880508213948]}
-                        zoom={16}
+                        zoom={15}
                         scrollWheelZoom={true}
                         dragging={true}>
-                        <TileLayer
-                          attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-                          url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
-                        />
+                        <LayersControl
+                          position='topleft'
+                          collapsed={false}
+                          className='layers-control'>
+                          <LayersControl.BaseLayer checked name='Map'>
+                            <ReactLeafletGoogleLayer
+                              apiKey='AIzaSyCMczhWPxQsV9MUqyA7touty4CqI8kc0ZI'
+                              type={'roadmap'}
+                            />
+                          </LayersControl.BaseLayer>
+                          <LayersControl.BaseLayer name='Satelit'>
+                            <ReactLeafletGoogleLayer
+                              apiKey='AIzaSyCMczhWPxQsV9MUqyA7touty4CqI8kc0ZI'
+                              type={'hybrid'}
+                            />
+                          </LayersControl.BaseLayer>
+                          <LayersControl.BaseLayer name='OSM'>
+                            <TileLayer
+                              attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                              url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+                            />
+                          </LayersControl.BaseLayer>
+                        </LayersControl>
                         <Marker
                           position={[-6.305261349820201, 106.71880508213948]}>
                           <Popup>
-                            A pretty CSS3 popup. <br /> Easily customizable.
+                            Sinar Media Sakti Adv.
+                            <br />
+                            Jl. Aria Putra No.8, Serua Indah, Tangerang, Kota
+                            Tangerang Selatan, Banten 15414
+                            <br />
+                            <a
+                              href='https://www.google.com/maps/place/Sinar+Media+Sakti+Adv./@-6.305328,106.7188024,15z/data=!4m12!1m6!3m5!1s0x0:0x255275b0a3914694!2sSinar+Media+Sakti+Adv.!8m2!3d-6.3053294!4d106.7188105!3m4!1s0x0:0x255275b0a3914694!8m2!3d-6.3053294!4d106.7188105'
+                              style={{ textDecoration: 'none' }}
+                              target='_tab'>
+                              Google Map
+                            </a>
                           </Popup>
                         </Marker>
                       </MapContainer>

@@ -22,7 +22,6 @@
     justify-content: flex-start;
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
-    padding-top: 40px;
 }
 .line-contact {
     border-top: 2px solid #24275C;
@@ -45,10 +44,17 @@
 
     .side-contact-2 h2{
         font-size: 14px;
+        padding-top: 0px;
     }
 
     .line-contact { 
-        padding-left: 120px;
+        padding-left: 135px;
+        margin-top: 25px;
+    }
+
+    .icon {
+        height: auto;
+        width: 35px;
     }
   }
 
@@ -84,6 +90,7 @@
 
     .side-contact-2 h2{
         font-size: 16px;
+        padding-top: 40px;
     }
 
     .line-contact { 
@@ -102,6 +109,7 @@
 
     .side-contact-2 h2{
         font-size: 16px;
+        padding-top: 40px;
     }
 
     .line-contact { 
@@ -109,6 +117,8 @@
     }
 }
 
-@media screen and (max-width: 768px) {
-    
+@media screen and (max-width: 1920px) and (min-width: 769px){
+    .side-contact-2 h2{
+        padding-top: 40px;
+    }
 }

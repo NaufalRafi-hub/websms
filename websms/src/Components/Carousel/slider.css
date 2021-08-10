@@ -145,7 +145,6 @@
   top: 5%;
   justify-content: center;
   z-index: 200;
-  
 }
 /* halotest */
 .dot {
@@ -223,17 +222,7 @@
     padding-left: 290px;
     
   }
-
-  /* .slide-image {
-    height: 40%;
-  } */
 }
-
-/* @media screen and (max-width: 540px) {
-  .detail-button > hr {
-    padding-left: 280px;
-  }
-} */
 
 @media screen and (max-width: 453px) {
   .detail-button > hr {
@@ -267,11 +256,10 @@
     width: min(90%, 27em);
     margin: 0 auto;
   }
-  /* .detail-button{
-    width: min(100%, 20em);
-    margin: 0 auto;
-  } */
-  /* .detail-button > hr {
-    padding-left: 55%;
-  } */
+}
+
+@media screen and (max-width: 1200px) {
+  .all-dots{
+    display: none;
+  }
 }
