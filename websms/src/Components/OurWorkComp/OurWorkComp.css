@@ -36,6 +36,8 @@
   color: #24275C;
   text-transform: capitalize;
   /* display: none; */
+  justify-content: center;
+  margin-bottom: 200px;
 }
 
 .option > li {

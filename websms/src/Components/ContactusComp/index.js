@@ -31,33 +31,13 @@ const ContactusComp = () => {
           </h2>
           <Row>
             <Icon>
-              <EmailIcon />
-              <WAIcon />
-              {/* <div className="line-contact">
-
-            </div> */}
+              <EmailIcon className='icon' />
+              <WAIcon className='icon' />
             </Icon>
             <div className='line-contact'></div>
           </Row>
         </div>
       </div>
-      {/* <div className='map'>
-        <MapContainer
-          center={[-6.305261349820201, 106.71880508213948]}
-          zoom={16}
-          scrollWheelZoom={true}
-          dragging={true}>
-          <TileLayer
-            attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-            url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
-          />
-          <Marker position={[-6.305261349820201, 106.71880508213948]}>
-            <Popup>
-              A pretty CSS3 popup. <br /> Easily customizable.
-            </Popup>
-          </Marker>
-        </MapContainer>
-      </div> */}
     </div>
   );
 };
