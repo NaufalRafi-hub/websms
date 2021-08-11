@@ -11,7 +11,7 @@ const AboutusComp = () => {
         <div className="container">
             <Row className="justify-content-md-center">
                 <Col className="sub-about" >
-                    <h1>About Us</h1>
+                    <h1>Tentang Kami</h1>
                     <div className="img-about">
                         <img src={aboutus} alt="Kantor" className="img-about2" width="400"/>  
                     </div>

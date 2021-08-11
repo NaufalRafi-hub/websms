@@ -9,7 +9,7 @@ const ServicesComp = () => {
     <div className='container sub-services'>
       <div className='desktop'>
         <div className='judul row justify-content-start'>
-          <h1>Services</h1>
+          <h1>Layanan</h1>
         </div>
         <div className='content'>
           {/* row pertama */}
@@ -160,7 +160,7 @@ const ServicesComp = () => {
         </div>
       </div>
       <div className='mobile'>
-        <h1>Services</h1>
+        <h1>Layanan</h1>
         <SliderServices imageSlider={imageSlider} />
       </div>
     </div>

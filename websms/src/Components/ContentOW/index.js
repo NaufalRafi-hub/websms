@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, {useEffect} from "react";
 import imageSlider from "../Carousel/imageSlider";
 import { useParams } from "react-router-dom";
 import { useAnimation } from "framer-motion";

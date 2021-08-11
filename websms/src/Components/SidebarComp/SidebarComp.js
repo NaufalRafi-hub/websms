@@ -1,9 +1,6 @@
 import styled from 'styled-components'
 import {BsX} from 'react-icons/bs'
 
-const media = {
-    mobile: '@media(max-width: 400px)'
-}
 
 export const SidebarContainer = styled.aside`
     position: fixed;

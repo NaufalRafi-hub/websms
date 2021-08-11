@@ -46,7 +46,7 @@ const OurWorkComp = () => {
   return (
     <div className='wrapper'>
       <div className='title'>
-        <h1>Our Work</h1>
+        <h1>Produk Kami</h1>
       </div>
       <div className='aside'>
         <ul className='option'>

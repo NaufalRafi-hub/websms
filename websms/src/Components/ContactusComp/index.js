@@ -15,7 +15,7 @@ const ContactusComp = () => {
   return (
     <div className='contact-us'>
       <div className='side-contact'>
-        <h1>Contact Us</h1>
+        <h1>Kontak Kami</h1>
         <div className='side-contact-2'>
           <h2>
             Jl. Aria Putra No. 8 RT 01 / RW 06 <br />
