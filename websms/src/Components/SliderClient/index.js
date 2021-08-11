@@ -34,7 +34,7 @@ export default function SliderClient() {
       <Wrapper>
         <Slider {...settings}>
           {Data.map((data, index) => (
-            <div key={index}>
+            <div key={index} style={{alignItems: 'center'}}>
               <Img src={data.img} />
             </div>
           ))}
