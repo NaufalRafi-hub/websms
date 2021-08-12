@@ -81,19 +81,21 @@
     }
   }
 
-@media screen and (max-width: 540px) and (max-height: 720px) {
+@media screen and (max-width: 540px) and (max-height: 812px) {
     .side-contact h1 {
         font-size: 48px;
+        margin-bottom: 0px;
     }
 
     .side-contact-2 h2{
         font-size: 14px;
         padding-top: 0px;
+        margin-bottom: 0%;
     }
 
     .icon {
         height: auto;
-        width: 40px
+        width: 30px
     }
 
     .contact-us {
@@ -106,7 +108,7 @@
     }
 
     .side-contact {
-        margin-bottom: 5%;
+        margin-bottom: 2.5%;
     }
 }
 
