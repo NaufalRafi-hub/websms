@@ -260,6 +260,7 @@
 }
 
 @media screen and (max-width: 540px) {
+
   .slide-image {
     height: 35%;
   }
@@ -285,5 +286,9 @@
   .next {
     right: -15px
   }
-
+  
+  .slides {
+    justify-content: space-evenly;
+    height: 60vh;
+  }
 }

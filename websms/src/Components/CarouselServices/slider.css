@@ -42,7 +42,7 @@
   grid-template-rows: 1fr;
   grid-template-areas: "title"
                        "description";
-  gap: 10px;
+  gap: 2%;
   margin-top: 20px;
 }
 
@@ -126,11 +126,10 @@
   background-color: #24275C;
 }
 
-@media screen  and (max-width: 1200px){
-
-
-
-
+@media screen  and (max-width: 540px){
+  .slides1 {
+    height: 60vh;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -211,6 +210,7 @@
 }
 
 @media screen and (max-height: 569px) {
+
   .slide-title1 {
     font-size: 2ch;
     margin: 0;
