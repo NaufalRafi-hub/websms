@@ -155,5 +155,13 @@
 @media screen and (max-height: 640px) {
   .title > h1 {
     font-size: 40px;
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .wrapper {
+    margin-top: 0px;
   }
 }
