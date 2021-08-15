@@ -49,14 +49,14 @@ const IsiaboutComp = () => {
         variants={aboutVariants}
         transition={{ duration: 0.7 }}
       >
-        <Headline>Why Us?</Headline>
+        <Headline>Kenapa Kami?</Headline>
         <Txtwrapper>
-          <Subhead whileHover={{ scale: 1.1 }}>Vision</Subhead>
+          <Subhead whileHover={{ scale: 1.1 }}>Visi</Subhead>
           <Desc>
             Layanan<b> integrated marketing communications</b> yang prima dengan
             konsep layanan <b>one stop service </b>dalam satu atap.
           </Desc>
-          <Subhead>How We Work?</Subhead>
+          <Subhead whileHover={{ scale: 1.1 }}>Cara Kerja Kami</Subhead>
           <Desc>
             <b>Membantu</b> produsen / brand dalam{" "}
             <b>setiap program marketing communication</b> <br />
@@ -71,22 +71,22 @@ const IsiaboutComp = () => {
             <b>layanan yang prima</b> dan <b>kepuasan pelanggan</b>
           </Desc>
         </Txtwrapper>
-        <Subhead>Experiences</Subhead>
+        <Subhead whileHover={{ scale: 1.1 }}>Pengalaman</Subhead>
         <ExpDiv>
           <ColExpFolder>
             <FolderIcon />
             <Subhead>1000+</Subhead>
-            <Desc2>Projects</Desc2>
+            <Desc2>Proyek</Desc2>
           </ColExpFolder>
           <ColExpClient>
             <ClientIcon />
             <Subhead>500+</Subhead>
-            <Desc2>Clients</Desc2>
+            <Desc2>klien</Desc2>
           </ColExpClient>
           <ColExpClock>
             <ClockIcon />
-            <Subhead>1000+ Hours</Subhead>
-            <Desc2>Work Times</Desc2>
+            <Subhead>1000+ Jam</Subhead>
+            <Desc2>Waktu Kerja</Desc2>
           </ColExpClock>
         </ExpDiv>
       </Bgwrapper>

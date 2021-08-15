@@ -43,7 +43,7 @@ const HeroExpertiseComp = () => {
             variants={expVariants}
             transition={{ duration: 0.7 }}
           >
-            Our Expertise
+            Keahlian Kami
           </Headline>
         </Judulexp>
         <Subexp>
