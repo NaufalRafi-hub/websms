@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 
 
-export const SidebarContainer = styled(motion.aside)`
+export const SidebarContainer = styled.aside`
     position: fixed;
     z-index: 999;
     width: 50%;
@@ -13,7 +13,7 @@ export const SidebarContainer = styled(motion.aside)`
     display: grid;
     align-items: center;
     top: 0;
-    // transition: 1s ease-in-out;
+    transition: ${({ isOpen }) => (isOpen ? '0.7s ease' : '1s ease-in-out')};
     right: ${({ isOpen }) => (isOpen ? '0' : '-10000px')};
 
     
