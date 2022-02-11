@@ -1,22 +1,22 @@
-import React from 'react';
-import './ContactusComp.css';
-import { Icon, EmailIcon, WAIcon } from './ContactusComp';
-import { Row } from 'react-bootstrap';
+import React from "react";
+import "./ContactusComp.css";
+import { Icon, EmailIcon, WAIcon } from "./ContactusComp";
+import { Row } from "react-bootstrap";
 import {
   MapContainer,
   LayersControl,
   Marker,
   Popup,
   TileLayer,
-} from 'react-leaflet';
+} from "react-leaflet";
 // import { Map, GoogleApiWrapper } from 'google-maps-react';
 
 const ContactusComp = () => {
   return (
-    <div className='contact-us'>
-      <div className='side-contact'>
+    <div className="contact-us">
+      <div className="side-contact">
         <h1>Kontak Kami</h1>
-        <div className='side-contact-2'>
+        <div className="side-contact-2">
           <h2>
             Jl. Aria Putra No. 8 RT 01 / RW 06 <br />
             Kel. Sarua Indah, Kec. Ciputat, <br />
@@ -31,10 +31,10 @@ const ContactusComp = () => {
           </h2>
           <Row>
             <Icon>
-              <EmailIcon className='icon' />
-              <WAIcon className='icon' />
+              <EmailIcon className="icon" />
+              <WAIcon className="icon" />
             </Icon>
-            <div className='line-contact'></div>
+            <div className="line-contact"></div>
           </Row>
         </div>
       </div>

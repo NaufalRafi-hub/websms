@@ -1,138 +1,133 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,400&display=swap");
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .sub-about h1 {
-    font-size: 6rem;
-    color: #FFCC33;
-    font-weight: bold;
-    font-family: 'Viga', sans-serif;
-    text-align: center;
-    position: relative;
-    align-items: center;
+  font-size: 6rem;
+  color: #ffcc33;
+  font-weight: bold;
+  font-family: "Viga", sans-serif;
+  text-align: center;
+  position: relative;
+  align-items: center;
 }
 
 .sub-about p {
-    text-align: justify;
-    text-justify: auto;
-    font-size: 15px;
-    line-height: 2;
-    font-family: 'Open Sans', sans-serif;
+  text-align: justify;
+  text-justify: auto;
+  font-size: 15px;
+  line-height: 2;
+  font-family: "Open Sans", sans-serif;
 }
 
 .isi {
-    padding-top: 30px;
-    margin-right: auto;
-    margin-left: auto;
-    width: min(90%, 27em);
-    
+  padding-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  width: min(90%, 27em);
 }
 .row-line {
-    display: inline-flex;
-    margin-right: auto;
-    margin-left: auto;
-    width: min(90%, 28em);
-    gap: 20px;
+  display: inline-flex;
+  margin-right: auto;
+  margin-left: auto;
+  width: min(90%, 28em);
+  gap: 20px;
 }
 .btn-about {
-    /* margin-right: 325px; */
-    background:#24275C;
-    padding: 8px 23px;
-    font-size: 12px;
-    border-radius: 20px;
-    cursor: pointer;
-    text-decoration: none;
-    color: white;
+  /* margin-right: 325px; */
+  background: #24275c;
+  padding: 8px 23px;
+  font-size: 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
 }
 .btn-about:hover {
-    background:#FFCC33;
-    text-decoration: none;
+  background: #ffcc33;
+  text-decoration: none;
 }
-.line-about{
-    border-top: 2px solid #24275C;
-    /* padding-left: 320px; */
-    padding-left: 70%;
-    margin-top: 19px;
-    margin-left: 5px;
-    
+.line-about {
+  border-top: 2px solid #24275c;
+  /* padding-left: 320px; */
+  padding-left: 70%;
+  margin-top: 19px;
+  margin-left: 5px;
 }
 .div-btn {
-    margin-left: 340px;
-    position: fixed;
+  margin-left: 340px;
+  position: absolute;
 }
 
-.img-about  {
-    text-align: center;
-    align-items: center;
+.img-about {
+  text-align: center;
+  align-items: center;
 }
-@media screen and (max-width:380px) {
-    .sub-about h1 {
-        font-size: 50px;
-        
-    }
-    .isi p{
-        font-size: 12px;
-    }
-    
-    .img-about2{
-        width: 80%;
-    }
-    .div-btn {
-        right: 40px;
-        margin-left: auto;
-    }
-    .line-about {
-        padding-left: 50%;
-    }
-}
-
-@media screen and (max-width:470px) and (min-width:380px){
-    
-    .sub-about h1 {
-        font-size: 50px;
-        
-    }
-    .isi p{
-        font-size: 12px;
-    }
-    
-    .img-about2{
-        width: 80%;
-    }
-    .div-btn {
-        right: 40px;
-        margin-left: auto;
-    }
-    .line-about {
-        padding-left: 60%;
-    }
-
-}
-
-@media screen and (max-width:768px) {
-    
-    .sub-about h1 {
-        font-size: 60px;
-        
-    }
-    .isi p{
-        font-size: 13px;
-    }
-    .line-about{
-        margin-left: 14px;
-        /* padding-left: 300px; */
-    }
-}
-@media screen and (max-width:992px) and (min-width: 769px) {
-    .sub-about h1 {
-        font-size: 70px;
-        
-    }
-}
-@media screen and (max-height: 640px) {
-    .sub-about h1 {
-      font-size: 40px;
-    }
+@media screen and (max-width: 380px) {
+  .sub-about h1 {
+    font-size: 50px;
+  }
+  .isi p {
+    font-size: 12px;
   }
 
+  .img-about2 {
+    width: 80%;
+  }
+  .div-btn {
+    right: 40px;
+    margin-left: auto;
+  }
+  .line-about {
+    padding-left: 50%;
+  }
+}
 
+@media screen and (max-width: 470px) and (min-width: 380px) {
+  .sub-about h1 {
+    font-size: 50px;
+  }
+  .isi p {
+    font-size: 12px;
+  }
 
-    
+  .img-about2 {
+    width: 80%;
+  }
+  .div-btn {
+    right: 40px;
+    margin-left: auto;
+  }
+  .line-about {
+    padding-left: 60%;
+  }
+}
 
+@media screen and (max-width: 768px) {
+  .sub-about h1 {
+    font-size: 60px;
+  }
+  .isi p {
+    font-size: 13px;
+  }
+  .line-about {
+    margin-left: 14px;
+    /* padding-left: 300px; */
+  }
+}
+@media screen and (max-width: 992px) and (min-width: 769px) {
+  .sub-about h1 {
+    font-size: 70px;
+  }
+}
+@media screen and (max-height: 640px) {
+  .sub-about h1 {
+    font-size: 40px;
+  }
+}
