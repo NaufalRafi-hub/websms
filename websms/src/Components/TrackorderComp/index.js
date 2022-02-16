@@ -11,7 +11,7 @@ const TrackorderComp = () => {
                 <Col>
                     <div className="judul-track">
                         <h1>
-                            Track Order
+                            Lacak Pesanan
                         </h1>
                     </div>
                 </Col>
@@ -21,7 +21,7 @@ const TrackorderComp = () => {
                     <Col>
                         <div className="sub-content-track">
                             <h2>
-                                Track Your Order!
+                                Lacak Pesanan Anda!
                             </h2>
                         </div>
                     </Col>
@@ -33,22 +33,7 @@ const TrackorderComp = () => {
                         </div>
                     </Col>
                 </Row>
-                <Row>
-                    <Col>
-                        <div className="track-or">
-                            <h2>
-                                Or
-                            </h2>
-                        </div>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <div className="btn-div">
-                            <Button className="btn-track" variant="dark">Log in</Button>
-                        </div>
-                    </Col>
-                </Row>
+                
             </div>
             
 

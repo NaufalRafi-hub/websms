@@ -9,13 +9,13 @@ const HeadlineAbtComp = () => {
     <div className="container">
       <div className="wrapper-head-abt">
         <div className="judul-abt">
-          <h1>About Us</h1>
+          <h1>Tentang Kami</h1>
         </div>
         <div className="judul-aboutdetIcon">
           <BackIconDiv>
             <BackIcon />
             <Link to="/" className="IconLink">
-              back
+              Beranda
             </Link>
           </BackIconDiv>
         </div>

@@ -7,7 +7,7 @@ import Data from '../CarouselOurOffice/Data';
 const OurOfficeAbtComp = () => {
     return (
         <div className = "container">
-            <Headline>Our Office</Headline>
+            <Headline>Kantor Kami</Headline>
             <SliderOF imageSlider={Data}/>
         </div>
     )

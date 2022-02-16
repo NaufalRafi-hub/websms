@@ -5,7 +5,7 @@ import { Headline } from './ClientAbtElements'
 const ClientAbtComp = () => {
     return (
         <div className="container">
-            <Headline>Top Clients</Headline>
+            <Headline>Klien</Headline>
             <SliderClient />
         </div>
     )

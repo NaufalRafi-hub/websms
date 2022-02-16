@@ -7,19 +7,23 @@ import {
   CloseIcon,
 } from "./SidebarComp";
 
-const SidebarComp = ({isOpen, toggle}) => {
+const SidebarComp = ({ isOpen, toggle }) => {
+  
   return (
-    <SidebarContainer isOpen={isOpen} onClick={toggle}>
+    <SidebarContainer
+      isOpen={isOpen}
+      onClick={toggle}
+    >
       <Icon>
         <CloseIcon />
       </Icon>
       <SidebarMenu>
-        <SidebarLink href="#page1">Home</SidebarLink>
-        <SidebarLink href="#page2">About Us</SidebarLink>
-        <SidebarLink href="#page3">Services</SidebarLink>
-        <SidebarLink href="#page4">Our Work</SidebarLink>
-        <SidebarLink href="#page5">Track Order</SidebarLink>
-        <SidebarLink href="#page6">Contact Us</SidebarLink>
+        <SidebarLink to="/">Beranda</SidebarLink>
+        <SidebarLink to="/#2">Tentang Kami</SidebarLink>
+        <SidebarLink to="/#3">Layanan</SidebarLink>
+        <SidebarLink to="/#4">Produk Kami</SidebarLink>
+        <SidebarLink to="/#5">Lacak Pesanan</SidebarLink>
+        <SidebarLink to="/#6">Kontak Kami</SidebarLink>
       </SidebarMenu>
     </SidebarContainer>
   );

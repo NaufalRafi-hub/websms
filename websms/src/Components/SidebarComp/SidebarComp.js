@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 import {BsX} from 'react-icons/bs'
+import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 
 
 export const SidebarContainer = styled.aside`
@@ -11,7 +13,7 @@ export const SidebarContainer = styled.aside`
     display: grid;
     align-items: center;
     top: 0;
-    transition: 1s ease-in-out;
+    transition: ${({ isOpen }) => (isOpen ? '0.7s ease' : '1s ease-in-out')};
     right: ${({ isOpen }) => (isOpen ? '0' : '-10000px')};
 
     
@@ -41,6 +43,8 @@ export const SidebarMenu = styled.div`
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 50px);
     align-items: center;
+    margin-right: auto;
+    margin-left: auto;
 
     @media only screen and (max-width: 600px) and (min-width: 319px) {
         grid-template-rows: repeat(6, 40px);
@@ -48,11 +52,12 @@ export const SidebarMenu = styled.div`
     
 `
 
-export const SidebarLink = styled.a`
+export const SidebarLink = styled(NavLink)`
+    
     display: flex;
     align-items: center;
-    text-align: left;
-    justify-content: center;
+    // text-align: left;
+    // justify-content: center;
     font-size: 1.5rem;
     text-decoration: none;
     transition: 0.1s ease-in-out;
@@ -62,7 +67,7 @@ export const SidebarLink = styled.a`
     
     &:hover {
         color: #FFCC33;
-        font-size: 2rem;
+        // font-size: 2rem;
         transition: 0.1s ease-in-out;
         text-decoration: none;
     }

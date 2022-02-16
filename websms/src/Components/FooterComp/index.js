@@ -25,12 +25,12 @@ const FooterComp = () => {
             <Logo to="/">SMS</Logo>
           </LogoDiv>
           <NavDiv>
-            <Nav to="/">Home</Nav>
-            <Nav to="/#2">About Us</Nav>
-            <Nav to="/#3">Services</Nav>
-            <Nav to="/#4">Our Work</Nav>
-            <Nav to="/#5">Track Order</Nav>
-            <Nav to="/#6">Contact Us</Nav>
+            <Nav to="/">Beranda</Nav>
+            <Nav to="/#2">Tentang Kami</Nav>
+            <Nav to="/#3">Layanan</Nav>
+            <Nav to="/#4">Produk Kami</Nav>
+            <Nav to="/#5">Lacak Pesanan</Nav>
+            <Nav to="/#6">Kontak Kami</Nav>
           </NavDiv>
 
           <ContactDiv>
